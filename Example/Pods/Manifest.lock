@@ -1,0 +1,16 @@
+PODS:
+  - Cam (0.1.0)
+
+DEPENDENCIES:
+  - Cam (from `../`)
+
+EXTERNAL SOURCES:
+  Cam:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Cam: 98515e5b221e7e324c23d95b9973b9be5964095f
+
+PODFILE CHECKSUM: 6382f9b86a6ebfb8ed73bd8005ac7c85eff960a2
+
+COCOAPODS: 1.5.3

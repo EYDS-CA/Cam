@@ -43,9 +43,9 @@
 		702418BDE80087AB909F2088 /* Pods-Cam_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cam_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cam_Example/Pods-Cam_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7F705315B4F62F02320DCE29 /* Pods_Cam_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cam_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF845B6FC690BF424325075 /* Pods_Cam_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cam_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACA83815C0E55D69B0386EF7 /* Cam.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Cam.podspec; path = ../Cam.podspec; sourceTree = "<group>"; };
-		AFAFF9B2664161BF75C9B6DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E14B806DA7C385A0091E0547 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ACA83815C0E55D69B0386EF7 /* Cam.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Cam.podspec; path = ../Cam.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AFAFF9B2664161BF75C9B6DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E14B806DA7C385A0091E0547 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FB9DABEA1BB76F5484C2DCC5 /* Pods-Cam_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cam_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cam_Tests/Pods-Cam_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
