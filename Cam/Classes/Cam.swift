@@ -8,8 +8,25 @@
 import Foundation
 import UIKit
 
-class Cam {
-    lazy var cam: CamViewController = {
-    return UIStoryboard(name: "Cam", bundle: Bundle.main).instantiateViewController(withIdentifier: "Cam") as! CamViewController
+@available(iOS 11.0, *)
+
+public class Cam {
+
+    public init() {}
+
+    static var bundle: Bundle {
+        let podBundle = Bundle(for: CamViewController.self)
+
+        if let bundleURL = podBundle.url(forResource: "Cam", withExtension: "bundle"), let b = Bundle(url: bundleURL) {
+            return b
+        } else {
+            print("Fatal Error: Could not find bundle for Cam Framework")
+            fatalError()
+        }
+    }
+
+    // Picker view controller
+    public lazy var camVC: CamViewController = {
+        return UIStoryboard(name: "Cam", bundle: Cam.bundle).instantiateViewController(withIdentifier: " Cam") as! CamViewController
     }()
 }

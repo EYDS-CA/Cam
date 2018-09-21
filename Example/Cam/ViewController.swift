@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cam
 
 class ViewController: UIViewController {
 
@@ -20,5 +21,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-}
+    @IBAction func action(_ sender: UIButton) {
+        let cam = Cam()
+        let vc = cam.camVC
+        self.present(vc, animated: true, completion: nil)
+    }
 
+}

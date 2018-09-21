@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment version="4352" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,17 +13,50 @@
         <!--Cam View Controller-->
         <scene sceneID="nSG-5j-sap">
             <objects>
-                <viewController storyboardIdentifier="Cam" id="xzr-Bz-0dS" customClass="CamViewController" customModule="Cam" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Cam" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xzr-Bz-0dS" customClass="CamViewController" customModule="Cam" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fjZ-VL-3qB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5p3-u3-xaa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioq-b0-ubh">
+                                        <rect key="frame" x="160" y="584" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="UOL-Yr-sLP"/>
+                                            <constraint firstAttribute="height" constant="55" id="pjo-xI-WMx"/>
+                                        </constraints>
+                                        <state key="normal" title="Capture"/>
+                                        <connections>
+                                            <action selector="captureAction:" destination="xzr-Bz-0dS" eventType="touchUpInside" id="XeR-36-zDH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ioq-b0-ubh" secondAttribute="bottom" constant="8" id="B8M-dG-6qx"/>
+                                    <constraint firstItem="ioq-b0-ubh" firstAttribute="centerX" secondItem="5p3-u3-xaa" secondAttribute="centerX" id="Fgg-eh-Gx2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Jm-aO-Ro0" firstAttribute="bottom" secondItem="5p3-u3-xaa" secondAttribute="bottom" id="B7L-qF-B44"/>
+                            <constraint firstItem="5p3-u3-xaa" firstAttribute="top" secondItem="0Jm-aO-Ro0" secondAttribute="top" id="BBk-tM-n5d"/>
+                            <constraint firstItem="0Jm-aO-Ro0" firstAttribute="trailing" secondItem="5p3-u3-xaa" secondAttribute="trailing" id="TkH-Qa-7Kc"/>
+                            <constraint firstItem="5p3-u3-xaa" firstAttribute="leading" secondItem="0Jm-aO-Ro0" secondAttribute="leading" id="foo-dw-H4s"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Jm-aO-Ro0"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraContainer" destination="5p3-u3-xaa" id="ujI-rr-mLQ"/>
+                        <outlet property="captureButton" destination="ioq-b0-ubh" id="39P-05-4YZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukd-NN-36x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="-116"/>
+            <point key="canvasLocation" x="-108" y="-170"/>
         </scene>
     </scenes>
 </document>
