@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AVFoundation
 import UIKit
 
 @available(iOS 11.0, *)
@@ -27,6 +28,10 @@ public class Cam {
 
     // Picker view controller
     public lazy var camVC: CamViewController = {
-        return UIStoryboard(name: "Cam", bundle: Cam.bundle).instantiateViewController(withIdentifier: " Cam") as! CamViewController
+        return UIStoryboard(name: "Cam", bundle: Cam.bundle).instantiateViewController(withIdentifier: "Cam") as! CamViewController
     }()
+
+     public func display(on parent: UIViewController, buttonAndBackgroundColor: UIColor? = .white, buttonTextColor: UIColor? = .black, then: @escaping (_ photo: Photo?)-> Void) {
+        camVC.display(on: parent, buttonAndBackgroundColor: buttonAndBackgroundColor, buttonTextColor: buttonTextColor, then: then)
+    }
 }

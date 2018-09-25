@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Cam/Classes/**/*.{swift}'
 
   s.resource_bundles = {
-      'Browser' => ['Cam/Classes/**/*.{storyboard,xib}']
+      'Cam' => ['Cam/Classes/**/*.{storyboard,xib}']
   }
   # s.resource_bundles = {
   #   'Cam' => ['Cam/Assets/*.png']

@@ -4,7 +4,6 @@
 //
 //  Created by Amir Shayegh on 2018-09-21.
 //
-
 import Foundation
 import UIKit
 
@@ -24,7 +23,15 @@ extension UIView {
 
     // Load a nib
     class func fromNib<T: UIView>() -> T {
-        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
+        return Cam.bundle.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
     }
+
+    func roundCorners(corners:UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+
 
 }

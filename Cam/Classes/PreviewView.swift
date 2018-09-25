@@ -22,21 +22,29 @@ class PreviewView: UIView {
     }
 
     // MARK: Positioning
-    func position(in cameraContainer: UIView) {
-        self.frame = cameraContainer.frame
+    func position(in cameraContainer: UIView, behind: UIView) {
+        //        self.frame = cameraContainer.frame
+        self.frame = cameraContainer.bounds
         self.center.x = cameraContainer.center.x
         self.center.y = cameraContainer.center.y
         self.centerXAnchor.constraint(equalTo: cameraContainer.centerXAnchor)
         self.centerYAnchor.constraint(equalTo: cameraContainer.centerYAnchor)
         self.translatesAutoresizingMaskIntoConstraints = false
         cameraContainer.addSubview(self)
+        //        cameraContainer.insertSubview(self, belowSubview: behind)
 
         // Add constraints
         self.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            self.widthAnchor.constraint(equalToConstant: cameraContainer.frame.height),
-            self.heightAnchor.constraint(equalToConstant: cameraContainer.frame.width),
+            self.topAnchor.constraint(equalTo: cameraContainer.topAnchor),
+            self.bottomAnchor.constraint(equalTo: cameraContainer.bottomAnchor),
+            self.leftAnchor.constraint(equalTo: cameraContainer.leftAnchor),
+            self.rightAnchor.constraint(equalTo: cameraContainer.rightAnchor),
+            self.centerXAnchor.constraint(equalTo: cameraContainer.centerXAnchor),
+            self.centerYAnchor.constraint(equalTo: cameraContainer.centerYAnchor)
             ])
+        self.layoutIfNeeded()
+        print("layed")
     }
 
 }

@@ -20,7 +20,7 @@
   },
   "source_files": "Cam/Classes/**/*.{swift}",
   "resource_bundles": {
-    "Browser": [
+    "Cam": [
       "Cam/Classes/**/*.{storyboard,xib}"
     ]
   }

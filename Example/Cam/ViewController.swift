@@ -13,18 +13,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func action(_ sender: UIButton) {
         let cam = Cam()
-        let vc = cam.camVC
-        self.present(vc, animated: true, completion: nil)
+        cam.display(on: self, buttonAndBackgroundColor: UIColor.blue, buttonTextColor: UIColor.white) { (photo) in
+            if let photo = photo {
+                let imageView = UIImageView(frame: self.view.frame)
+                imageView.contentMode = .scaleAspectFit
+                imageView.image = photo.image
+                self.view.addSubview(imageView)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                    //                        imageView.image = nil
+                    imageView.removeFromSuperview()
+                })
+            }
+        }
     }
 
 }
