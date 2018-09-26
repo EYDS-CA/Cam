@@ -80,8 +80,7 @@ public class CamViewController: UIViewController {
             UIView.animate(withDuration: animationDuration, animations: {
                 videoPreview.alpha = 1
                 imageView.alpha = 0
-                self.captureButton.setTitle("Capture", for: .normal)
-                self.closeButton.setTitle("Cancel", for: .normal)
+                self.setIconsForCapture()
                 self.view.layoutIfNeeded()
             }) { (done) in
                 self.previewing = false
@@ -395,6 +394,7 @@ public class CamViewController: UIViewController {
         captureButton.setTitleColor(textColor, for: .normal)
         captureButton.backgroundColor = primaryColor
         styleContainer(layer: self.view)
+        setIconsForCapture()
     }
 
     func styleContainer(layer: UIView) {
@@ -458,13 +458,47 @@ public class CamViewController: UIViewController {
         addImagePreviewConstraints(to: imageView)
         UIView.animate(withDuration: animationDuration, animations: {
             videoPreview.alpha = 0
-            self.captureButton.setTitle("Accept", for: .normal)
-            self.closeButton.setTitle("Back", for: .normal)
+            self.setIconsForPreview()
             self.view.layoutIfNeeded()
         }) { (done) in
             self.view.addSubview(self.captureButton)
             self.view.addSubview(self.closeButton)
         }
+    }
+
+    func setIconsForCapture() {
+        if let cancel = UIImage(named: "cancel", in: Cam.bundle, compatibleWith: nil) {
+            self.closeButton.setTitle("", for: .normal)
+            closeButton.backgroundColor = primaryColor
+            closeButton.tintColor = textColor
+            self.closeButton.setImage(cancel, for: .normal)
+            if let buttonImage = closeButton.imageView {
+                buttonImage.contentMode = .scaleAspectFit
+                closeButton.imageEdgeInsets = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
+            }
+
+            makeCircle(view: closeButton)
+        } else {
+            self.closeButton.setTitle("Close", for: .normal)
+        }
+        self.captureButton.setTitle("Capture", for: .normal)
+    }
+
+    func setIconsForPreview() {
+        if let garbage = UIImage(named: "garbage", in: Cam.bundle, compatibleWith: nil) {
+            self.closeButton.setTitle("", for: .normal)
+            closeButton.backgroundColor = .white
+            closeButton.tintColor = UIColor.red
+            self.closeButton.setImage(garbage, for: .normal)
+            if let buttonImage = closeButton.imageView {
+                buttonImage.contentMode = .scaleAspectFit
+                closeButton.imageEdgeInsets = UIEdgeInsets(top: 2, left: 2, bottom: 2, right: 2)
+            }
+            makeCircle(view: closeButton)
+        } else {
+            self.closeButton.setTitle("Back", for: .normal)
+        }
+        self.captureButton.setTitle("Accept", for: .normal)
     }
 
 }

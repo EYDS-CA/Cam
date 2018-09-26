@@ -31,11 +31,8 @@ Pod::Spec.new do |s|
   s.source_files = 'Cam/Classes/**/*.{swift}'
 
   s.resource_bundles = {
-      'Cam' => ['Cam/Classes/**/*.{storyboard,xib}']
+      'Cam' => ['Cam/Classes/**/*.{storyboard,xib}', 'Cam/Assets/*.png']
   }
-  # s.resource_bundles = {
-  #   'Cam' => ['Cam/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

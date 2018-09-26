@@ -21,7 +21,8 @@
   "source_files": "Cam/Classes/**/*.{swift}",
   "resource_bundles": {
     "Cam": [
-      "Cam/Classes/**/*.{storyboard,xib}"
+      "Cam/Classes/**/*.{storyboard,xib}",
+      "Cam/Assets/*.png"
     ]
   }
 }
