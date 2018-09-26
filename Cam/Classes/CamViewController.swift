@@ -7,14 +7,36 @@
 
 import UIKit
 import AVFoundation
+import Extended
+import Designer
 
 enum CamMode {
     case Video
     case Photo
 }
 
+extension Designer {
+    func styleContainer(layer: UIView) {
+        roundTopCorners(view: layer, by: 15)
+        addShadow(to: layer.layer, opacity: 0.4, height: 2)
+    }
+
+    func roundTopCorners(view: UIView, by: CGFloat) {
+        view.clipsToBounds = true
+        view.layer.cornerRadius = by
+        view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+    }
+
+    func style(button: UIButton, bg: UIColor, tint: UIColor) {
+        makeCircle(view: button)
+        button.backgroundColor = bg
+        button.tintColor = tint
+        button.setTitleColor(tint, for: .normal)
+    }
+}
+
 @available(iOS 11.0, *)
-public class CamViewController: UIViewController {
+public class CamViewController: UIViewController, Designer {
 
     // MARK: Constants
     let shadowColor = UIColor(red:0.14, green:0.25, blue:0.46, alpha:0.2).cgColor
@@ -44,8 +66,8 @@ public class CamViewController: UIViewController {
 
     var taken: AVCapturePhoto?
 
-    var primaryColor: UIColor = .white
-    var textColor: UIColor = .black
+    var primaryColor: UIColor = UIColor(hex: "#234075")
+    var textColor: UIColor = UIColor.white
 
     var callBack: ((_ photo: Photo?)-> Void)?
 
@@ -110,13 +132,14 @@ public class CamViewController: UIViewController {
         setInput(forDevice: position)
         setOutput()
         setPreviewView()
+        captureSession.commitConfiguration()
         captureSession.startRunning()
     }
 
     func setPreviewView() {
         self.view.layoutIfNeeded()
         guard let parent = self.parent, let parentView = parent.view else {return}
-        let preview: PreviewView = UIView.fromNib()
+        let preview: PreviewView = UIView.fromNib(bundle: Cam.bundle)
         preview.videoPreviewLayer.session = self.captureSession
         preview.position(in: cameraContainere, behind: captureButton)
         self.videoPreviewLayer = preview
@@ -150,7 +173,6 @@ public class CamViewController: UIViewController {
         self.captureSession.sessionPreset = .photo
         self.captureSession.addOutput(photoOutput)
         self.captureSession.commitConfiguration()
-        captureSession.startRunning()
     }
 
     func setPhotoSettings() -> AVCapturePhotoSettings {
@@ -210,6 +232,8 @@ public class CamViewController: UIViewController {
         } else {
             //portrait
             if UIDevice.current.orientation == UIDeviceOrientation.portrait {
+                return .portrait
+            } else if UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDevice.current.orientation == UIDeviceOrientation.faceDown {
                 return .portrait
             } else {
                 return .portraitUpsideDown
@@ -330,14 +354,22 @@ public class CamViewController: UIViewController {
         view.frame = CGRect(x: 0, y: parentHeight - suggested.height , width: suggested.width, height: suggested.height)
         view.center.x = parentVC.view.center.x
         view.translatesAutoresizingMaskIntoConstraints = false
-        let heightAnchor = view.heightAnchor.constraint(equalToConstant: suggested.height)
+
+        let heightAnchor: NSLayoutConstraint = view.heightAnchor.constraint(equalToConstant: suggested.height)
+        var topAnchor: NSLayoutConstraint?
+
+        if let superview = parentVC.view.superview, UIDevice.current.userInterfaceIdiom == .pad {
+            topAnchor = view.topAnchor.constraint(greaterThanOrEqualToSystemSpacingBelow: superview.topAnchor, multiplier: 0)
+        } else {
+            topAnchor = view.topAnchor.constraint(greaterThanOrEqualToSystemSpacingBelow: parentVC.view.topAnchor, multiplier: 5)
+        }
         heightAnchor.priority = .init(750)
         NSLayoutConstraint.activate([
             view.centerXAnchor.constraint(equalTo: parentVC.view.centerXAnchor),
             view.widthAnchor.constraint(equalToConstant: suggested.width),
             heightAnchor,
             view.bottomAnchor.constraint(equalTo: parentVC.view.bottomAnchor),
-            view.topAnchor.constraint(greaterThanOrEqualToSystemSpacingBelow: parentVC.view.topAnchor, multiplier: 5)
+            topAnchor!
         ])
 
         self.view.layoutIfNeeded()
@@ -386,42 +418,14 @@ public class CamViewController: UIViewController {
     // MARK: Style
     func style() {
         if self.captureButton == nil {return}
-        self.cameraContainere.backgroundColor = primaryColor
+        self.cameraContainere.backgroundColor = .black
         cameraContainere.clipsToBounds = true
         self.view.clipsToBounds = true
         styleContainer(layer: cameraContainere)
-        makeCircle(view: captureButton)
-        captureButton.setTitleColor(textColor, for: .normal)
-        captureButton.backgroundColor = primaryColor
+        style(button: captureButton, bg: primaryColor, tint: textColor)
+        style(button: closeButton,bg: primaryColor, tint: textColor)
         styleContainer(layer: self.view)
         setIconsForCapture()
-    }
-
-    func styleContainer(layer: UIView) {
-        roundTopCorners(view: layer)
-        addShadow(to: view.layer, opacity: 0.4, height: 2)
-    }
-
-    func addShadow(to layer: CALayer, opacity: Float, height: Int, radius: CGFloat? = 10) {
-        layer.borderColor = shadowColor
-        layer.shadowOffset = CGSize(width: 0, height: height)
-        layer.shadowColor = shadowColor
-        layer.shadowOpacity = opacity
-        var r: CGFloat = 10
-        if let radius = radius {
-            r = radius
-        }
-        layer.shadowRadius = r
-    }
-
-    func makeCircle(view: UIView) {
-        view.layer.cornerRadius = view.frame.size.height/2
-    }
-
-    func roundTopCorners(view: UIView) {
-        view.clipsToBounds = true
-        view.layer.cornerRadius = 15
-        view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
 
     func convert(photo: AVCapturePhoto?) -> Photo? {
@@ -448,11 +452,6 @@ public class CamViewController: UIViewController {
         imageView.tag = imagePreviewTag
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
-//        self.view.insertSubview(imageView, aboveSubview: videoPreview)
-//        self.view.addSubview(imageView)
-//        self.view.addSubview(captureButton)
-//        self.view.addSubview(closeButton)
-
         previewing = true
         self.view.insertSubview(imageView, aboveSubview: videoPreview)
         addImagePreviewConstraints(to: imageView)
@@ -469,8 +468,6 @@ public class CamViewController: UIViewController {
     func setIconsForCapture() {
         if let cancel = UIImage(named: "cancel", in: Cam.bundle, compatibleWith: nil) {
             self.closeButton.setTitle("", for: .normal)
-            closeButton.backgroundColor = primaryColor
-            closeButton.tintColor = textColor
             self.closeButton.setImage(cancel, for: .normal)
             if let buttonImage = closeButton.imageView {
                 buttonImage.contentMode = .scaleAspectFit
@@ -482,13 +479,13 @@ public class CamViewController: UIViewController {
             self.closeButton.setTitle("Close", for: .normal)
         }
         self.captureButton.setTitle("Capture", for: .normal)
+        closeButton.alpha = 0.8
+        captureButton.alpha = 0.8
     }
 
     func setIconsForPreview() {
         if let garbage = UIImage(named: "garbage", in: Cam.bundle, compatibleWith: nil) {
             self.closeButton.setTitle("", for: .normal)
-            closeButton.backgroundColor = .white
-            closeButton.tintColor = UIColor.red
             self.closeButton.setImage(garbage, for: .normal)
             if let buttonImage = closeButton.imageView {
                 buttonImage.contentMode = .scaleAspectFit
@@ -499,10 +496,13 @@ public class CamViewController: UIViewController {
             self.closeButton.setTitle("Back", for: .normal)
         }
         self.captureButton.setTitle("Accept", for: .normal)
+        closeButton.alpha = 0.8
+        captureButton.alpha = 0.8
     }
 
 }
 
+// MARK: Handle image return
 extension CamViewController: AVCapturePhotoCaptureDelegate {
 
     public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
@@ -510,6 +510,5 @@ extension CamViewController: AVCapturePhotoCaptureDelegate {
         self.taken = photo
         showPreview(of: photo)
         self.captureButton.isEnabled = true
-//        close()
     }
 }

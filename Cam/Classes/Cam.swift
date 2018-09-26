@@ -31,7 +31,7 @@ public class Cam {
         return UIStoryboard(name: "Cam", bundle: Cam.bundle).instantiateViewController(withIdentifier: "Cam") as! CamViewController
     }()
 
-     public func display(on parent: UIViewController, buttonAndBackgroundColor: UIColor? = .white, buttonTextColor: UIColor? = .black, then: @escaping (_ photo: Photo?)-> Void) {
-        camVC.display(on: parent, buttonAndBackgroundColor: buttonAndBackgroundColor, buttonTextColor: buttonTextColor, then: then)
+     public func display(on parent: UIViewController, buttonColor: UIColor? = UIColor(hex: "#234075"), buttonTextColor: UIColor? = .white, then: @escaping (_ photo: Photo?)-> Void) {
+        camVC.display(on: parent, buttonAndBackgroundColor: buttonColor, buttonTextColor: buttonTextColor, then: then)
     }
 }

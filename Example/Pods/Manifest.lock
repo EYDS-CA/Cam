@@ -1,15 +1,26 @@
 PODS:
-  - Cam (0.1.0)
+  - Cam (1.0.0):
+    - Designer
+    - Extended
+  - Designer (0.1.0)
+  - Extended (0.4.0)
 
 DEPENDENCIES:
   - Cam (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Designer
+    - Extended
 
 EXTERNAL SOURCES:
   Cam:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Cam: 758cacf22e8feca683d966e325f706dc7655ff00
+  Cam: ba072228c4847fab377d42e4ec64c946712fb5c8
+  Designer: 898fa6ef36d9bfabc117234cdabefd51dd8110f1
+  Extended: b55424d2b5240ceec3de0d31e40db069a5002b6a
 
 PODFILE CHECKSUM: 6382f9b86a6ebfb8ed73bd8005ac7c85eff960a2
 

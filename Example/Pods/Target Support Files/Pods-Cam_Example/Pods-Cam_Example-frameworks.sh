@@ -144,9 +144,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Cam/Cam.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Designer/Designer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Extended/Extended.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Cam/Cam.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Designer/Designer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Extended/Extended.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

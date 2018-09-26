@@ -271,10 +271,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cam_Example/Pods-Cam_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cam/Cam.framework",
+				"${BUILT_PRODUCTS_DIR}/Designer/Designer.framework",
+				"${BUILT_PRODUCTS_DIR}/Extended/Extended.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cam.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Designer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Extended.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
