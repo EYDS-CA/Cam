@@ -22,6 +22,7 @@ public class CamViewController: UIViewController {
     let whiteScreenTag = 52
     let imagePreviewTag = 53
     let animationDuration: Double = 0.2
+
     var displayPadding: CGFloat {
         if UIDevice.current.userInterfaceIdiom == .pad {
             return 100
@@ -36,6 +37,8 @@ public class CamViewController: UIViewController {
     var videoPreviewLayer: PreviewView?
     var picPreview: UIView?
     var imageOrientation: AVCaptureVideoOrientation?
+    var deviceOrientationOnCapture: UIDeviceOrientation?
+
     var flashEnabled: Bool = false
     var hasFlash: Bool = false
 
@@ -74,7 +77,7 @@ public class CamViewController: UIViewController {
     @IBAction func closeAction(_ sender: Any) {
         if previewing {
             guard let videoPreview = videoPreviewLayer, let imageView = self.view.viewWithTag(imagePreviewTag) as? UIImageView else {return}
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: animationDuration, animations: {
                 videoPreview.alpha = 1
                 imageView.alpha = 0
                 self.captureButton.setTitle("Capture", for: .normal)
@@ -85,6 +88,7 @@ public class CamViewController: UIViewController {
                 imageView.removeFromSuperview()
             }
         } else {
+            self.taken = nil
             self.close()
         }
     }
@@ -94,8 +98,10 @@ public class CamViewController: UIViewController {
             close()
         } else {
             guard let parent = self.parent, let parentView = parent.view else {return}
+            self.captureButton.isEnabled = false
             self.imageOrientation = getVideoOrientation(size: parentView.frame.size)
             let settings = setPhotoSettings()
+            self.deviceOrientationOnCapture = UIDevice.current.orientation
             self.photoOutput.capturePhoto(with: settings, delegate: self)
         }
     }
@@ -150,13 +156,6 @@ public class CamViewController: UIViewController {
 
     func setPhotoSettings() -> AVCapturePhotoSettings {
         var photoSettings: AVCapturePhotoSettings = AVCapturePhotoSettings()
-//
-//        if photoOutput.availableRawPhotoPixelFormatTypes.contains(.)
-//        if let pixelFormat = photoOutput.availableRawPhotoPixelFormatTypes.first {
-//             photoSettings = AVCapturePhotoSettings(rawPixelFormatType: pixelFormat)
-//        } else {
-//             photoSettings = AVCapturePhotoSettings()
-//        }
         if self.photoOutput.availablePhotoCodecTypes.contains(.jpeg) {
             photoSettings = AVCapturePhotoSettings(format:
                 [AVVideoCodecKey: AVVideoCodecType.jpeg])
@@ -191,9 +190,7 @@ public class CamViewController: UIViewController {
     override public func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         self.view.layoutIfNeeded()
-        guard let parent = self.parent else {return}
         setVideoOrientation(for: size)
-//        position(in: parent)
         place(with: size)
     }
 
@@ -205,14 +202,7 @@ public class CamViewController: UIViewController {
 
     func getVideoOrientation(size: CGSize) -> AVCaptureVideoOrientation {
         self.view.layoutIfNeeded()
-//        guard let parent = self.parent else {return .landscapeRight}
-//        let parentWidth = parent.view.frame.width
-//        let parentHeight = parent.view.frame.height
-        //         return .landscapeRight
-
         if size.width > size.height {
-//        if parentWidth > parentHeight {
-            //landscape
             if UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft {
                 return .landscapeRight
             } else {
@@ -361,12 +351,7 @@ public class CamViewController: UIViewController {
 
     func getFrame(for size: CGSize) -> CGRect {
         self.view.layoutIfNeeded()
-//        guard let parent = self.parent else {return nil}
-//        let parentWidth = parent.view.frame.width
-//        let parentHeight = parent.view.frame.height
-
         if size.width > size.height {
-//        if parentWidth > parentHeight {
             //landscape
             let basicHeight = size.height - displayPadding
             let width = (basicHeight * 4) / 3
@@ -385,6 +370,16 @@ public class CamViewController: UIViewController {
             to.leadingAnchor.constraint(equalTo: self.cameraContainere.leadingAnchor),
             to.trailingAnchor.constraint(equalTo: self.cameraContainere.trailingAnchor),
             to.bottomAnchor.constraint(equalTo: self.cameraContainere.bottomAnchor)
+        ])
+    }
+
+    func addImagePreviewConstraints(to: UIView) {
+        to.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            to.leadingAnchor.constraint(equalTo: self.cameraContainere.leadingAnchor),
+            to.trailingAnchor.constraint(equalTo: self.cameraContainere.trailingAnchor),
+            to.bottomAnchor.constraint(equalTo: self.cameraContainere.bottomAnchor),
+            to.topAnchor.constraint(equalTo: self.cameraContainere.topAnchor)
         ])
     }
 
@@ -429,7 +424,7 @@ public class CamViewController: UIViewController {
     }
 
     func convert(photo: AVCapturePhoto?) -> Photo? {
-        guard let photo = photo, let cgImageRepresentation = photo.cgImageRepresentation() else {
+        guard let photo = photo, let cgImageRepresentation = photo.cgImageRepresentation(), let orientationOnCapture = deviceOrientationOnCapture else {
             return nil
         }
 
@@ -439,10 +434,9 @@ public class CamViewController: UIViewController {
             return nil
         }
 
-        let image = UIImage(cgImage: copy)
-//        let ciImage = CIImage(cvImageBuffer: pixelBuffer)
-//        let uiImage = UIImage(ciImage: ciImage)
-        let processed = Photo(image: image, timeStamp: photo.timestamp, metadata: photo.metadata)
+        let img = UIImage(cgImage: copy, scale: 1.0, orientation: orientationOnCapture.getUIImageOrientationFromDevice())
+
+        let processed = Photo(image: img, timeStamp: photo.timestamp, metadata: photo.metadata)
 
         return processed
     }
@@ -451,15 +445,15 @@ public class CamViewController: UIViewController {
         guard let photo = convert(photo: avCapturePhoto), let image = photo.image else {return}
         let imageView = UIImageView(frame: self.cameraContainere.frame)
         imageView.tag = imagePreviewTag
+        imageView.contentMode = .scaleAspectFit
         imageView.image = image
-        imageView.sizeToFit()
         self.view.addSubview(imageView)
         self.view.addSubview(captureButton)
         self.view.addSubview(closeButton)
         previewing = true
-        addPreviewConstraints(to: imageView)
+        addImagePreviewConstraints(to: imageView)
         if let videoPreview = videoPreviewLayer {
-            UIView.animate(withDuration: 0.2) {
+            UIView.animate(withDuration: animationDuration) {
                 videoPreview.alpha = 0
                 self.captureButton.setTitle("Accept", for: .normal)
                 self.closeButton.setTitle("Back", for: .normal)
@@ -479,6 +473,7 @@ extension CamViewController: AVCapturePhotoCaptureDelegate {
         print("taken")
         self.taken = photo
         showPreview(of: photo)
+        self.captureButton.isEnabled = true
 //        close()
     }
 }
