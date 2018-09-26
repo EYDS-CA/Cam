@@ -20,6 +20,7 @@ public class CamViewController: UIViewController {
     let shadowColor = UIColor(red:0.14, green:0.25, blue:0.46, alpha:0.2).cgColor
     let notification = UINotificationFeedbackGenerator()
     let whiteScreenTag = 52
+    let imagePreviewTag = 53
     let animationDuration: Double = 0.2
     var displayPadding: CGFloat {
         if UIDevice.current.userInterfaceIdiom == .pad {
@@ -43,8 +44,9 @@ public class CamViewController: UIViewController {
     var primaryColor: UIColor = .white
     var textColor: UIColor = .black
 
-    // MARK: Optionals
     var callBack: ((_ photo: Photo?)-> Void)?
+
+    var previewing: Bool = false
 
     // MARK: Outlet
     @IBOutlet weak var cameraContainere: UIView!
@@ -70,14 +72,32 @@ public class CamViewController: UIViewController {
 
     // MARK: Outlet Actions
     @IBAction func closeAction(_ sender: Any) {
-        self.close()
+        if previewing {
+            guard let videoPreview = videoPreviewLayer, let imageView = self.view.viewWithTag(imagePreviewTag) as? UIImageView else {return}
+            UIView.animate(withDuration: 0.2, animations: {
+                videoPreview.alpha = 1
+                imageView.alpha = 0
+                self.captureButton.setTitle("Capture", for: .normal)
+                self.closeButton.setTitle("Cancel", for: .normal)
+                self.view.layoutIfNeeded()
+            }) { (done) in
+                self.previewing = false
+                imageView.removeFromSuperview()
+            }
+        } else {
+            self.close()
+        }
     }
 
     @IBAction func captureAction(_ sender: Any) {
-        guard let parent = self.parent, let parentView = parent.view else {return}
-        self.imageOrientation = getVideoOrientation(size: parentView.frame.size)
-        let settings = setPhotoSettings()
-        self.photoOutput.capturePhoto(with: settings, delegate: self)
+        if previewing {
+            close()
+        } else {
+            guard let parent = self.parent, let parentView = parent.view else {return}
+            self.imageOrientation = getVideoOrientation(size: parentView.frame.size)
+            let settings = setPhotoSettings()
+            self.photoOutput.capturePhoto(with: settings, delegate: self)
+        }
     }
 
     func setup(for position: AVCaptureDevice.Position) {
@@ -427,6 +447,30 @@ public class CamViewController: UIViewController {
         return processed
     }
 
+    func showPreview(of avCapturePhoto: AVCapturePhoto) {
+        guard let photo = convert(photo: avCapturePhoto), let image = photo.image else {return}
+        let imageView = UIImageView(frame: self.cameraContainere.frame)
+        imageView.tag = imagePreviewTag
+        imageView.image = image
+        imageView.sizeToFit()
+        self.view.addSubview(imageView)
+        self.view.addSubview(captureButton)
+        self.view.addSubview(closeButton)
+        previewing = true
+        addPreviewConstraints(to: imageView)
+        if let videoPreview = videoPreviewLayer {
+            UIView.animate(withDuration: 0.2) {
+                videoPreview.alpha = 0
+                self.captureButton.setTitle("Accept", for: .normal)
+                self.closeButton.setTitle("Back", for: .normal)
+                self.view.layoutIfNeeded()
+            }
+        } else {
+            imageView.alpha = 1
+            self.view.layoutIfNeeded()
+        }
+    }
+
 }
 
 extension CamViewController: AVCapturePhotoCaptureDelegate {
@@ -434,6 +478,7 @@ extension CamViewController: AVCapturePhotoCaptureDelegate {
     public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         print("taken")
         self.taken = photo
-        close()
+        showPreview(of: photo)
+//        close()
     }
 }
