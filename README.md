@@ -11,8 +11,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-## Installation
 ![Alt Text](https://github.com/FreshworksStudio/Cam/blob/master/ReadmeFiles/capture.png)
+
+## Installation
+
 Cam is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -56,6 +58,7 @@ cam.display(on: self) { (photo) in
 	}
 }
 ```
+
 ![Alt Text](https://github.com/FreshworksStudio/Cam/blob/master/ReadmeFiles/captured.png)
 
 ## Author
