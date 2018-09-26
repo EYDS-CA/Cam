@@ -257,6 +257,7 @@ public class CamViewController: UIViewController {
     }
 
     @objc func cancelled(_ sender: UISwipeGestureRecognizer) {
+        self.taken = nil
         close()
     }
 
@@ -442,26 +443,27 @@ public class CamViewController: UIViewController {
     }
 
     func showPreview(of avCapturePhoto: AVCapturePhoto) {
-        guard let photo = convert(photo: avCapturePhoto), let image = photo.image else {return}
+        guard let photo = convert(photo: avCapturePhoto), let image = photo.image, let videoPreview = videoPreviewLayer else {return}
         let imageView = UIImageView(frame: self.cameraContainere.frame)
         imageView.tag = imagePreviewTag
         imageView.contentMode = .scaleAspectFit
         imageView.image = image
-        self.view.addSubview(imageView)
-        self.view.addSubview(captureButton)
-        self.view.addSubview(closeButton)
+//        self.view.insertSubview(imageView, aboveSubview: videoPreview)
+//        self.view.addSubview(imageView)
+//        self.view.addSubview(captureButton)
+//        self.view.addSubview(closeButton)
+
         previewing = true
+        self.view.insertSubview(imageView, aboveSubview: videoPreview)
         addImagePreviewConstraints(to: imageView)
-        if let videoPreview = videoPreviewLayer {
-            UIView.animate(withDuration: animationDuration) {
-                videoPreview.alpha = 0
-                self.captureButton.setTitle("Accept", for: .normal)
-                self.closeButton.setTitle("Back", for: .normal)
-                self.view.layoutIfNeeded()
-            }
-        } else {
-            imageView.alpha = 1
+        UIView.animate(withDuration: animationDuration, animations: {
+            videoPreview.alpha = 0
+            self.captureButton.setTitle("Accept", for: .normal)
+            self.closeButton.setTitle("Back", for: .normal)
             self.view.layoutIfNeeded()
+        }) { (done) in
+            self.view.addSubview(self.captureButton)
+            self.view.addSubview(self.closeButton)
         }
     }
 
