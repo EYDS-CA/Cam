@@ -12,13 +12,50 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 ## Installation
-
+![Alt Text](https://github.com/FreshworksStudio/Cam/blob/master/ReadmeFiles/capture.PNG)
 Cam is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Cam'
+pod 'Cam', '1.0.0'
 ```
+## Quick Usage
+
+1) Import the library
+
+```Swift
+import UIKit
+import Cam
+
+2) Create a Cam object
+
+```Swift
+let camera = Cam()
+```
+
+3) Call Display
+```Swift
+cam.display(on: self) { (photo) in
+		
+}
+```
+
+4) Process Photo 
+```Swift
+cam.display(on: self) { (photo) in
+	if let photo = photo {
+		// Example: displaying image on an imageview for 2 seconds
+		let imageView = UIImageView(frame: self.view.frame)
+		imageView.contentMode = .scaleAspectFit
+		imageView.image = photo.image
+		self.view.addSubview(imageView)
+		DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+			imageView.removeFromSuperview()
+		})
+	}
+}
+```
+![Alt Text](https://github.com/FreshworksStudio/Cam/blob/master/ReadmeFiles/taken.PNG)
 
 ## Author
 
