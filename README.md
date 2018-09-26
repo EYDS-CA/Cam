@@ -26,6 +26,7 @@ pod 'Cam', '1.0.0'
 ```Swift
 import UIKit
 import Cam
+```
 
 2) Create a Cam object
 
@@ -55,7 +56,7 @@ cam.display(on: self) { (photo) in
 	}
 }
 ```
-![Alt Text](https://github.com/FreshworksStudio/Cam/blob/master/ReadmeFiles/taken.PNG)
+![Alt Text](https://github.com/FreshworksStudio/Cam/blob/master/ReadmeFiles/captured.PNG)
 
 ## Author
 
