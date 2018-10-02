@@ -146,15 +146,15 @@ public class CamViewController: UIViewController, Designer {
 
     func addTempImageSnap() {
         return
-        if let previewLayer = self.videoPreviewLayer {
-            let img = previewLayer.toImage()
-            let view = UIImageView(frame: previewLayer.frame)
-            view.tag = imageTempPreviewTag
-            view.contentMode = .scaleAspectFit
-            view.image = img
-            self.view.insertSubview(view, aboveSubview: previewLayer)
-            addPreviewConstraints(to: view)
-        }
+//        if let previewLayer = self.videoPreviewLayer {
+//            let img = previewLayer.toImage()
+//            let view = UIImageView(frame: previewLayer.frame)
+//            view.tag = imageTempPreviewTag
+//            view.contentMode = .scaleAspectFit
+//            view.image = img
+//            self.view.insertSubview(view, aboveSubview: previewLayer)
+//            addPreviewConstraints(to: view)
+//        }
     }
 
     func removeTempImageSnap() {
