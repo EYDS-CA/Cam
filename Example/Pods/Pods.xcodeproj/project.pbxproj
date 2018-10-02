@@ -7,220 +7,219 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03622AF1E5F361045E1A59D85259BAFC /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0689C3E12CEEC4456AB428DAAE1152DB /* PreviewView.swift */; };
-		0F617C1A6D1269A70371A9377F1891FD /* Pods-Cam_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7554E884B6C5CA2F8380CA9B8B4FC3CE /* Pods-Cam_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		133C70C68055EA0384C2EDAA463B9D89 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B83F87770E80EED56AAC73C497A73E /* String.swift */; };
-		13FE8FFB0D7CEDF1215C8BDC36D6620B /* Designer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9F9B7C408B0CF2263EF2EBFF744B41 /* Designer.swift */; };
-		1573AF6269E0FF0AA6CD5FE87B1AB7AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D991AFAD5F878C17F1A3C275A92DE1C /* Foundation.framework */; };
-		189DF81506F5DF4D1A6E5F0F5D6CB695 /* Extended-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D3314BE744FBB63C3827A3E1F824A4 /* Extended-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BD7F02CCF60EA29951CF3111EE0EA4E /* Cam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CAA32713FDAA19D694FB6536A1538 /* Cam.swift */; };
-		21113EC577BBBF1F240F5E3DA15D178C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D991AFAD5F878C17F1A3C275A92DE1C /* Foundation.framework */; };
-		247268F10D0E8774596970F9CA1504B1 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42084C68D7A2A1C3797156757867073 /* UIApplication.swift */; };
-		34AD2EFA070977F2C70C4F872F56CC9B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9666FCAF092D3B45A8132470EC2D81 /* Date.swift */; };
-		494C29C03407131544943AA4E8DBC70F /* Extended.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D418C75E8DA805CDD3212293A2CF28D /* Extended.framework */; };
-		5606FA6CB6E35436A046062C8314F31C /* Designer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A3156018368F36E40A28FA92E03329 /* Designer-dummy.m */; };
-		5A7E5557F9CEDB4F6F0EBF3DE73CFF9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D991AFAD5F878C17F1A3C275A92DE1C /* Foundation.framework */; };
-		618C6955B1D08A1BCE83C964D52DDB7B /* Pods-Cam_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB3879F46EFE9529957DB844FCF7D9 /* Pods-Cam_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		691011836E37FD14DC9A606D9DB1FBE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D991AFAD5F878C17F1A3C275A92DE1C /* Foundation.framework */; };
-		6A1682694EC8CB562E5F32DCC81C22C1 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B07C4C2524179F2F7F440118C40FDAC /* cancel.png */; };
-		6D7FCF8DAE3498F829007F62DBFC665E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127FBB76846E69708EB530A0ACB1647 /* UIView.swift */; };
-		6F867FB0B9116357F6324340041D4107 /* PreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03BF35393F39FAFF3D3ABDE19FE715F /* PreviewView.xib */; };
-		7A91E6A8C778C66B6C46E97C5925FD9B /* Cam.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984E8C5D2D6CB704231BAF2092B00F14 /* Cam.bundle */; };
-		81CBB4730859A15C881FF11F70806A77 /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70FFE0002288BE2070D094969B9DFD /* DeviceOrientation.swift */; };
-		85A6D3136D6D1081D255E2D9A3C456B1 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1263BA7E73B7E5A0B99E4DF021C8B8 /* UILabel.swift */; };
-		8F3410F4C5E29D770753D22B17346EF8 /* CamPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1AA1770A5D37392CADB5EC4858C8C8 /* CamPhoto.swift */; };
-		976B2422F7825BA3C90F54BBCF4C8B9F /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089088D5B6B30753E046ACEB45376DE /* Int.swift */; };
-		9B3C3786B0114565ADA572E16F635752 /* Cam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD38775C31CA1EAE100CAA8C2250C4A /* Cam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C7E4F0F776EF38C198B84DED773BD6E /* Cam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F82A7BA8C3C22CD0D0968B3924C7088 /* Cam.storyboard */; };
-		A8C46EB28E8449177D400E9A7DB85199 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4E315715C3AFE9F6481FB17B10BE6 /* CamViewController.swift */; };
-		ABB4446D5D37B4F0C630BDDF5CB71CEF /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86E55D9D1B527DD2C6315A2C338E0B /* TimeInterval.swift */; };
-		B93CF3EA38CB34DF6402C2D6A00E1540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D991AFAD5F878C17F1A3C275A92DE1C /* Foundation.framework */; };
-		BC467F069FCF2B6CB5E8394CB2461C50 /* garbage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CA436B96D6DE9DF150289C1034EE1EC /* garbage.png */; };
-		BF10D37DCE9583BE611055BDC62E18A4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714D42611514CF11CEA69BC1ECFACE9 /* UIViewController.swift */; };
-		BF88C38D58AE917D1B66C74F94712C9A /* Extended-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F0E08E7436DC7013F8D5B00360560 /* Extended-dummy.m */; };
-		C20AAA4162F50EDE38D765A54D34F286 /* Pods-Cam_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C905CA36CB422752DE5323DC910AD660 /* Pods-Cam_Example-dummy.m */; };
-		C64080DC780BF74C5C46D05B48A95556 /* Designer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0AFE4C83A9C9BD685E532CF5846714 /* Designer.framework */; };
-		CA5C677029326E3E368F59D08DE50D05 /* Cam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 609F725003348FE105CFDA3355914742 /* Cam-dummy.m */; };
-		CF9C9AC958F8ACE814B0C73BF1C234A7 /* Designer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A68FCCCB00889B277E6FBE95AC49C69 /* Designer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9C1D04189C097BDC7C0FE005A9CF422 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32512E765BC67559AA25B5FF84DA69 /* Map.swift */; };
-		E716CC1528A6C3DCCEB8C82EB197730D /* Pods-Cam_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEB7C5530A20D39344C43E462DBBA65 /* Pods-Cam_Tests-dummy.m */; };
-		F3EE21C36D23C6967450283D43F4902B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14BBE7942DC3D47323811296F983AF5 /* Color.swift */; };
+		02CB2936FE45186A6B6DAB5479377F28 /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76B7EBB3499C5F9EFAE32F855C2655C /* DeviceOrientation.swift */; };
+		0B0181B7929D0F1220E9AE73585A3BBC /* Cam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CAA32713FDAA19D694FB6536A1538 /* Cam.swift */; };
+		0F4A0DA1D528D26BA56878135A2978C4 /* Designer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7A261005D7EC8DDB62D6B6CB0977C0 /* Designer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FDDCDF8C09B72EC3353334B75694FEE /* Extended-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B24163F358751B98EAD44680D34BA8EB /* Extended-dummy.m */; };
+		129FB379852DA4C630B529E83AC69721 /* Extended.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D418C75E8DA805CDD3212293A2CF28D /* Extended.framework */; };
+		163C03EF533FE0D664445CB6554CA8CB /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0689C3E12CEEC4456AB428DAAE1152DB /* PreviewView.swift */; };
+		16674B9DDC9A3486DC4496799F2CBC54 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65538C09CE99680C55AA1BCB59939C /* UIViewController.swift */; };
+		28D92C57E68B01F5A229D4D682BDDAF1 /* Cam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA2EFA3F137F04F70575DCAD2469DFE /* Cam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39AFBEE7566C70C813E0622501A6C081 /* Pods-Cam_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E531F8BD351D85D849B0329CB11C1088 /* Pods-Cam_Example-dummy.m */; };
+		3C11DCB6AD7BD3BABF870D36DE74A995 /* Designer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 625D82E141B6F4DA2E0193DCFCD023F7 /* Designer-dummy.m */; };
+		3C22856EBDA4F2E404F6B6CD9E200131 /* Pods-Cam_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D22139EBB677C34C7EEA57C93176E3 /* Pods-Cam_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EA52143B29C5BE22680DB53DF36FC6 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF4749AD943FEBF9777CB35117B440 /* UICollectionView.swift */; };
+		4F1BEE6D034E6A54975D5362EECD5D82 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43946560A783610D57C12723B112B67 /* String.swift */; };
+		518DD961B07D62AABFC74C43B244031B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B2821986FB18CDB9CC0C37066BA3C9 /* Foundation.framework */; };
+		54AD311F54013743E0B78FC1D480CC45 /* PreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03BF35393F39FAFF3D3ABDE19FE715F /* PreviewView.xib */; };
+		5C68D4D4ABF7E66E65D9E21452874C91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B2821986FB18CDB9CC0C37066BA3C9 /* Foundation.framework */; };
+		639360FD262F462C9070F3C61397E5FC /* Cam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 889C73AF07F6D9DE9F514CD19490ED08 /* Cam-dummy.m */; };
+		64F7791A03B03F6F0D1A23104C5CAA20 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A229C499365C381BEFAA5E8BA863D4B /* TimeInterval.swift */; };
+		65B4A380EE008C6A0FAD501B2B65C046 /* Pods-Cam_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A8677ACF9F479CB077127523CFE8CF /* Pods-Cam_Tests-dummy.m */; };
+		7A9E5291189D3EED2772BC0AB083DB77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B2821986FB18CDB9CC0C37066BA3C9 /* Foundation.framework */; };
+		7DE4EB16B3C173227D4E69F4B7954BB1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBB0A92C43E21F737CADA00FF049C09 /* Color.swift */; };
+		9EA21DD42586979B5E2875605E15BE3E /* Cam.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984E8C5D2D6CB704231BAF2092B00F14 /* Cam.bundle */; };
+		A21F24DBE6A60461059E3E35183C4648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B2821986FB18CDB9CC0C37066BA3C9 /* Foundation.framework */; };
+		A6D43EC5A8EC5AF3BB0464811BB347F3 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4E315715C3AFE9F6481FB17B10BE6 /* CamViewController.swift */; };
+		AA4F82CB21639899B61A441F99156C99 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B07C4C2524179F2F7F440118C40FDAC /* cancel.png */; };
+		B894F44E1BA9F22695BCFC4E640899F9 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888FAA661B8A67341597024E25DE0DF9 /* UILabel.swift */; };
+		BC2E5376A96BA5F128FA6B85C727BFBD /* Cam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F82A7BA8C3C22CD0D0968B3924C7088 /* Cam.storyboard */; };
+		C24A84FB89CC7AC832FB202E68F9E5B5 /* Extended-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C79212B446ECA1DD1F10B3F2F8CE40E3 /* Extended-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5CC4CC97960F020DCF88DB5DD8BAD03 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6ADAE171ED0AF3F2E2613E39480E5 /* UIView.swift */; };
+		CA4CC75EC8C4082A60D4C4FF5D795605 /* Designer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0AFE4C83A9C9BD685E532CF5846714 /* Designer.framework */; };
+		D8A8100D2510DAD866EBA379AEA8C95A /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57739C0732202286FDB88BFE938D2E00 /* UIApplication.swift */; };
+		DC3C51D9F87F960B71A4DB60330CBCD9 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90578E58244EA90D35C93357FE092AC /* Int.swift */; };
+		E09D0728DA1382E2E554AB74F88BA6C2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D83809E7334F2252C46E1CB0D86222 /* Date.swift */; };
+		E4DCC6CD615AEE22B5DC7049CD110FF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B2821986FB18CDB9CC0C37066BA3C9 /* Foundation.framework */; };
+		E9083E9A1227AE3CBCFCCD3DAA81D88B /* Designer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF391661968D66901499C56F17D20AF /* Designer.swift */; };
+		EBAAED34A0600434862F15966E682AE2 /* Pods-Cam_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F060054DD31BEFE5425A1503E0019962 /* Pods-Cam_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F53F2D9229552B5EA1A13BC19A1329DA /* CamPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1AA1770A5D37392CADB5EC4858C8C8 /* CamPhoto.swift */; };
+		FD8871C7A17C5788C74C342A4D105112 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A088042405F9C04CA1606E4C463A14E /* Map.swift */; };
+		FE68FAFA0CEA7B5F48D5D5B6C60F74D4 /* garbage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CA436B96D6DE9DF150289C1034EE1EC /* garbage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		08C43AAD48887C839E3C459B88C61D20 /* PBXContainerItemProxy */ = {
+		11157489AC5F81AC4ED757DC87796813 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 399F930412BBDA1AF53827992CA2F407;
-			remoteInfo = Extended;
-		};
-		0BDFCCFF583AF3711C026042D377FC2F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C41618875A6AB2CF7BAA71C68846DA2A;
-			remoteInfo = Cam;
-		};
-		73917AE98712C7E5AC9DBD7C26F6EFC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 85DCDB1D0AEB60A583AF4EEE3F6B265D;
+			remoteGlobalIDString = CD49D3897075D6142E04499CC9AF979E;
 			remoteInfo = "Cam-Cam";
 		};
-		C07AB4B816D87492822E548C89B3B6DD /* PBXContainerItemProxy */ = {
+		115A5B970ECEA862D906DCC4A29116FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7CCEEF00DD408B0A2C378280B2276172;
-			remoteInfo = Designer;
+			remoteGlobalIDString = 554BAC35F0460051F1D7E1B276A91194;
+			remoteInfo = "Pods-Cam_Example";
 		};
-		C25390AFD8DE2A8924FB9CB4CB6C40D2 /* PBXContainerItemProxy */ = {
+		5AB62D50884F2E616BA4A224FC3C9B0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 399F930412BBDA1AF53827992CA2F407;
+			remoteGlobalIDString = 0C6B90CE03F27EDF078C1E82A774770D;
 			remoteInfo = Extended;
 		};
-		D3F0B26DE993D78324806E57AB4077C5 /* PBXContainerItemProxy */ = {
+		A939371CACEF08B83D600167CACB0C88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7CCEEF00DD408B0A2C378280B2276172;
+			remoteGlobalIDString = 4CAAFC4CB313DB28CD226F80B9C6F93F;
 			remoteInfo = Designer;
 		};
-		DEEFADFF59D182368D999667A9BE24FF /* PBXContainerItemProxy */ = {
+		ADD39979C5C52E83E7032E0F649CB9AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B124CDF7C3EF2C8213F86B9C214F383F;
-			remoteInfo = "Pods-Cam_Example";
+			remoteGlobalIDString = 07EC22D827D63F051D77F3E277F4B70D;
+			remoteInfo = Cam;
+		};
+		CCD0963F2800E6D67917035E60EFE1C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CAAFC4CB313DB28CD226F80B9C6F93F;
+			remoteInfo = Designer;
+		};
+		DCD50203A98F26D3302A974F5043EAD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C6B90CE03F27EDF078C1E82A774770D;
+			remoteInfo = Extended;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0127FBB76846E69708EB530A0ACB1647 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Extended/Classes/UIView.swift; sourceTree = "<group>"; };
-		023BA1A48157828B271E1A2D0D25C2F1 /* Pods-Cam_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cam_Example-frameworks.sh"; sourceTree = "<group>"; };
+		05B2821986FB18CDB9CC0C37066BA3C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0689C3E12CEEC4456AB428DAAE1152DB /* PreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = Cam/Classes/PreviewView.swift; sourceTree = "<group>"; };
-		0A06A70964EEC95D3E9FCAFBDFC68432 /* Pods-Cam_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cam_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0CA436B96D6DE9DF150289C1034EE1EC /* garbage.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = garbage.png; sourceTree = "<group>"; };
 		0F82A7BA8C3C22CD0D0968B3924C7088 /* Cam.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Cam.storyboard; sourceTree = "<group>"; };
-		0FFE677799540E64AB9D46B8012A962E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		159975D2207340C742FFDCB7BCA46C93 /* Extended.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Extended.framework; path = Extended.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16158B54CB4CF3E5AF59ACCEFFEE4A84 /* Pods_Cam_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Cam_Tests.framework; path = "Pods-Cam_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AC9B553AC1DE3A2277AA11F0CFC07BF /* Cam-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cam-prefix.pch"; sourceTree = "<group>"; };
-		23CE1A46FD6E53DBEE6A23A69B6BF464 /* Pods-Cam_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cam_Tests.modulemap"; sourceTree = "<group>"; };
-		2A32512E765BC67559AA25B5FF84DA69 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Extended/Classes/Map.swift; sourceTree = "<group>"; };
+		22BF33FCAFF3703E32CDEBA22F15C317 /* Designer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Designer-Info.plist"; sourceTree = "<group>"; };
+		26EC715B1AF4BC898F613AA8BE0D2EC0 /* Cam-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cam-prefix.pch"; sourceTree = "<group>"; };
 		2A629192261C03FC9A5812853AF962F8 /* Pods_Cam_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Cam_Example.framework; path = "Pods-Cam_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0AFE4C83A9C9BD685E532CF5846714 /* Designer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Designer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F7669F8EABCED419E862C8E3A2D2F10 /* Pods-Cam_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cam_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		30475803D439BCC9601AF62B4A183895 /* Cam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cam.modulemap; sourceTree = "<group>"; };
-		3133FC4FD547F1B61D8D9237737FB89F /* Pods-Cam_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cam_Tests-resources.sh"; sourceTree = "<group>"; };
-		3D91F8A69E64CFF1C8563A8126E786A5 /* Pods-Cam_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cam_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		402F0E08E7436DC7013F8D5B00360560 /* Extended-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Extended-dummy.m"; sourceTree = "<group>"; };
-		48D3314BE744FBB63C3827A3E1F824A4 /* Extended-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Extended-umbrella.h"; sourceTree = "<group>"; };
-		4A68FCCCB00889B277E6FBE95AC49C69 /* Designer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Designer-umbrella.h"; sourceTree = "<group>"; };
-		4D61A543B820751401B53A02E2F86DBA /* Extended.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Extended.modulemap; sourceTree = "<group>"; };
-		4EA6BCFA4E6583B089C61303B8D4BBDE /* Pods-Cam_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cam_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		50C1C1AA43288D1D64DAA41019EF3191 /* ResourceBundle-Cam-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Cam-Info.plist"; sourceTree = "<group>"; };
-		57A3156018368F36E40A28FA92E03329 /* Designer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Designer-dummy.m"; sourceTree = "<group>"; };
+		2CA205E4A5AECB7EE664927C4342CAE4 /* Pods-Cam_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cam_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2CA7E94B01FEE2989B46117AC7C3B3F5 /* Pods-Cam_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cam_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2CD6ADAE171ED0AF3F2E2613E39480E5 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Extended/Classes/UIView.swift; sourceTree = "<group>"; };
+		2FA5A50B70535731FFDCA978DED99DA5 /* Pods-Cam_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cam_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3483DDEE6497889DFF85AD9C77660701 /* Pods-Cam_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cam_Example-Info.plist"; sourceTree = "<group>"; };
+		3C8395ABFF24FBB9FB48E7CD1382C7BA /* Pods-Cam_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cam_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EF89704850B9FDCC3E63B57A4D2BE61 /* Pods-Cam_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cam_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		43706C865FA155698FA3D24520A65F21 /* Pods-Cam_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cam_Tests-Info.plist"; sourceTree = "<group>"; };
+		4A229C499365C381BEFAA5E8BA863D4B /* TimeInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeInterval.swift; path = Extended/Classes/TimeInterval.swift; sourceTree = "<group>"; };
+		4DBB0A92C43E21F737CADA00FF049C09 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Extended/Classes/Color.swift; sourceTree = "<group>"; };
+		55E39EE29FEC1BB9D86642107E441AF9 /* Designer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Designer-prefix.pch"; sourceTree = "<group>"; };
+		57739C0732202286FDB88BFE938D2E00 /* UIApplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIApplication.swift; path = Extended/Classes/UIApplication.swift; sourceTree = "<group>"; };
 		5B07C4C2524179F2F7F440118C40FDAC /* cancel.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
-		609F725003348FE105CFDA3355914742 /* Cam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cam-dummy.m"; sourceTree = "<group>"; };
-		60A2C5CFADB47E22B1C81FC7A9FE76AC /* Pods-Cam_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cam_Example.release.xcconfig"; sourceTree = "<group>"; };
-		655990AFFF0D960380F306F2A0337D45 /* Designer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Designer.modulemap; sourceTree = "<group>"; };
-		7554E884B6C5CA2F8380CA9B8B4FC3CE /* Pods-Cam_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cam_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7714D42611514CF11CEA69BC1ECFACE9 /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Extended/Classes/UIViewController.swift; sourceTree = "<group>"; };
-		77704862E32886D131343A8E63EBAB34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C1263BA7E73B7E5A0B99E4DF021C8B8 /* UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = Extended/Classes/UILabel.swift; sourceTree = "<group>"; };
-		7D1F37DC8F154149EAA279CDFB73B8B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625D82E141B6F4DA2E0193DCFCD023F7 /* Designer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Designer-dummy.m"; sourceTree = "<group>"; };
+		65BAB237D3B58DAB92AE5F5AD8D4C7ED /* Cam-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cam-Info.plist"; sourceTree = "<group>"; };
+		6A088042405F9C04CA1606E4C463A14E /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Extended/Classes/Map.swift; sourceTree = "<group>"; };
+		7238676C00E041E3FB4E752F9059F540 /* Extended-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Extended-prefix.pch"; sourceTree = "<group>"; };
+		72CF4749AD943FEBF9777CB35117B440 /* UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionView.swift; path = Extended/Classes/UICollectionView.swift; sourceTree = "<group>"; };
 		7D418C75E8DA805CDD3212293A2CF28D /* Extended.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extended.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D9F9B7C408B0CF2263EF2EBFF744B41 /* Designer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Designer.swift; path = Designer/Classes/Designer.swift; sourceTree = "<group>"; };
-		8BB1232900E5F67BB8B5F860561D0035 /* Cam.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cam.xcconfig; sourceTree = "<group>"; };
+		7FA2EFA3F137F04F70575DCAD2469DFE /* Cam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cam-umbrella.h"; sourceTree = "<group>"; };
+		849647FB1938E71BD7C5950D08D8FC04 /* Pods-Cam_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cam_Tests.modulemap"; sourceTree = "<group>"; };
+		888FAA661B8A67341597024E25DE0DF9 /* UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = Extended/Classes/UILabel.swift; sourceTree = "<group>"; };
+		889C73AF07F6D9DE9F514CD19490ED08 /* Cam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cam-dummy.m"; sourceTree = "<group>"; };
 		8D4138CED430F4A581696D3A6F98DF69 /* Cam.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Cam.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8D53642C443405D9CA0AFEAC3B1E70C2 /* Cam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cam.framework; path = Cam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D70FFE0002288BE2070D094969B9DFD /* DeviceOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceOrientation.swift; path = Extended/Classes/DeviceOrientation.swift; sourceTree = "<group>"; };
-		8E86E55D9D1B527DD2C6315A2C338E0B /* TimeInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeInterval.swift; path = Extended/Classes/TimeInterval.swift; sourceTree = "<group>"; };
+		8D74EE8E16344D06AA8701C0D6F00856 /* Pods-Cam_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cam_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97BB3879F46EFE9529957DB844FCF7D9 /* Pods-Cam_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cam_Example-umbrella.h"; sourceTree = "<group>"; };
+		97D7E69829E2CD70243BE037B259768C /* Pods-Cam_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cam_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		984E8C5D2D6CB704231BAF2092B00F14 /* Cam.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Cam.bundle; path = "Cam-Cam.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D991AFAD5F878C17F1A3C275A92DE1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9F384181B5C1B8EC35AE36D8604CC673 /* Designer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Designer-prefix.pch"; sourceTree = "<group>"; };
-		A42084C68D7A2A1C3797156757867073 /* UIApplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIApplication.swift; path = Extended/Classes/UIApplication.swift; sourceTree = "<group>"; };
-		A8B83F87770E80EED56AAC73C497A73E /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Extended/Classes/String.swift; sourceTree = "<group>"; };
-		A9E8F2BD6D0BF712412DD0EECAD96ACF /* Pods-Cam_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cam_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		ABD38775C31CA1EAE100CAA8C2250C4A /* Cam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cam-umbrella.h"; sourceTree = "<group>"; };
-		B3B6D78F2E495FBBCA1D92AFB38DF3B1 /* Extended-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Extended-prefix.pch"; sourceTree = "<group>"; };
-		B3EB697E5F3B852E7930DB0B5A9C2910 /* Extended.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Extended.xcconfig; sourceTree = "<group>"; };
+		9B599163A55326F86A81F1DF06ABA46A /* Extended.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Extended.xcconfig; sourceTree = "<group>"; };
+		9C81B08F68EA96D555ADEA0C11E3A32B /* Extended-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Extended-Info.plist"; sourceTree = "<group>"; };
+		9DF391661968D66901499C56F17D20AF /* Designer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Designer.swift; path = Designer/Classes/Designer.swift; sourceTree = "<group>"; };
+		A4FE4BB66E676963E460E1C6A895BF01 /* Pods-Cam_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cam_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A90578E58244EA90D35C93357FE092AC /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = Extended/Classes/Int.swift; sourceTree = "<group>"; };
+		B24163F358751B98EAD44680D34BA8EB /* Extended-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Extended-dummy.m"; sourceTree = "<group>"; };
+		B28D570693C7E5D03400C72CF1176811 /* Extended.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Extended.modulemap; sourceTree = "<group>"; };
+		B65B54A706B4C1BFC05AE95884300A22 /* Cam.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cam.xcconfig; sourceTree = "<group>"; };
 		B6C4A8214A097974D7B14ECCC9BBB241 /* Designer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Designer.framework; path = Designer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1AA1770A5D37392CADB5EC4858C8C8 /* CamPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CamPhoto.swift; path = Cam/Classes/CamPhoto.swift; sourceTree = "<group>"; };
-		BA52F11B91E53A93E684D4A954AA8E73 /* Pods-Cam_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cam_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C089088D5B6B30753E046ACEB45376DE /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = Extended/Classes/Int.swift; sourceTree = "<group>"; };
-		C43A353E7268A1637FCFB37B57878430 /* Pods-Cam_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cam_Example.modulemap"; sourceTree = "<group>"; };
-		C905CA36CB422752DE5323DC910AD660 /* Pods-Cam_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cam_Example-dummy.m"; sourceTree = "<group>"; };
-		CB26FD458F18120AE07DA5292FEB2300 /* Pods-Cam_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cam_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB65538C09CE99680C55AA1BCB59939C /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Extended/Classes/UIViewController.swift; sourceTree = "<group>"; };
+		C43946560A783610D57C12723B112B67 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Extended/Classes/String.swift; sourceTree = "<group>"; };
+		C5CE4018E6DFB52793B0CC0B1EA277EA /* Pods-Cam_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Cam_Example.modulemap"; sourceTree = "<group>"; };
+		C74A7D22A369955E68A289A4A99B8FFE /* Pods-Cam_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cam_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C79212B446ECA1DD1F10B3F2F8CE40E3 /* Extended-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Extended-umbrella.h"; sourceTree = "<group>"; };
+		C7A8677ACF9F479CB077127523CFE8CF /* Pods-Cam_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cam_Tests-dummy.m"; sourceTree = "<group>"; };
+		C85E4F765D152796E7205C6353A26771 /* Cam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cam.modulemap; sourceTree = "<group>"; };
+		CBC7AC357BAD3042071813698BA3A23F /* Designer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Designer.xcconfig; sourceTree = "<group>"; };
 		CBED7B941FD687D6B86A4DD556BB884F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		CDF52480EEC6755E1C96909A81FBF02C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03BF35393F39FAFF3D3ABDE19FE715F /* PreviewView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = PreviewView.xib; sourceTree = "<group>"; };
-		D87AAFE06D0DB091E21446A3A286DC5B /* Pods-Cam_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cam_Example-resources.sh"; sourceTree = "<group>"; };
+		D1D22139EBB677C34C7EEA57C93176E3 /* Pods-Cam_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cam_Example-umbrella.h"; sourceTree = "<group>"; };
+		DA7A261005D7EC8DDB62D6B6CB0977C0 /* Designer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Designer-umbrella.h"; sourceTree = "<group>"; };
 		DAD4E315715C3AFE9F6481FB17B10BE6 /* CamViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CamViewController.swift; path = Cam/Classes/CamViewController.swift; sourceTree = "<group>"; };
-		DB2C8CE2024E64E94CB217E0EA1AD3B0 /* Pods-Cam_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cam_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DE9666FCAF092D3B45A8132470EC2D81 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Extended/Classes/Date.swift; sourceTree = "<group>"; };
+		DCA68955E07095066905DE3BD9646010 /* ResourceBundle-Cam-Cam-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Cam-Cam-Info.plist"; sourceTree = "<group>"; };
+		E51B99C67F617BD9F90033653D218322 /* Designer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Designer.modulemap; sourceTree = "<group>"; };
+		E531F8BD351D85D849B0329CB11C1088 /* Pods-Cam_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cam_Example-dummy.m"; sourceTree = "<group>"; };
+		E6D83809E7334F2252C46E1CB0D86222 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Extended/Classes/Date.swift; sourceTree = "<group>"; };
+		E76B7EBB3499C5F9EFAE32F855C2655C /* DeviceOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceOrientation.swift; path = Extended/Classes/DeviceOrientation.swift; sourceTree = "<group>"; };
+		F060054DD31BEFE5425A1503E0019962 /* Pods-Cam_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cam_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F0E6EAF8A17F1963048AA6E55F37995C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F14BBE7942DC3D47323811296F983AF5 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Extended/Classes/Color.swift; sourceTree = "<group>"; };
-		F30A158D2EE7B66DEC9A30AD63D57E79 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F94CAA32713FDAA19D694FB6536A1538 /* Cam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cam.swift; path = Cam/Classes/Cam.swift; sourceTree = "<group>"; };
-		FA49EC690FC4A6DA0AAEA54AF5B9CB8F /* Designer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Designer.xcconfig; sourceTree = "<group>"; };
-		FEEB7C5530A20D39344C43E462DBBA65 /* Pods-Cam_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cam_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C162BA648C723726C1358A5F0A9C26F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21113EC577BBBF1F240F5E3DA15D178C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		556E71C996C5766E7417EE258E4073C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C64080DC780BF74C5C46D05B48A95556 /* Designer.framework in Frameworks */,
-				494C29C03407131544943AA4E8DBC70F /* Extended.framework in Frameworks */,
-				691011836E37FD14DC9A606D9DB1FBE2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C2A424F3CBFC5AE006A4D8978DE3FFA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A7E5557F9CEDB4F6F0EBF3DE73CFF9C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AA5CD6DC03E37EFA8E41A8E7F86911F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B93CF3EA38CB34DF6402C2D6A00E1540 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C95D89286B16DCFAE00F82E2BE2FBDCE /* Frameworks */ = {
+		11D6CEECD6160E085261261B3F1C95C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E836F0E554206D64227149D2D3248874 /* Frameworks */ = {
+		4E0C1719CE8CBAE95C59E8961AB5D591 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1573AF6269E0FF0AA6CD5FE87B1AB7AF /* Foundation.framework in Frameworks */,
+				518DD961B07D62AABFC74C43B244031B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931375695ABF5E13727E9E5CC7DE42A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21F24DBE6A60461059E3E35183C4648 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4188E758EA15198260DAE18E541FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9E5291189D3EED2772BC0AB083DB77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF096E2BB3ECF3FA4CDB54E21B9E2FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C68D4D4ABF7E66E65D9E21452874C91 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C92FA608B5851B636D5A947C71FB494B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4CC75EC8C4082A60D4C4FF5D795605 /* Designer.framework in Frameworks */,
+				129FB379852DA4C630B529E83AC69721 /* Extended.framework in Frameworks */,
+				E4DCC6CD615AEE22B5DC7049CD110FF6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +235,7 @@
 				0689C3E12CEEC4456AB428DAAE1152DB /* PreviewView.swift */,
 				B83E811CC21B85BFB0D6F6BF870E9F86 /* Pod */,
 				9DB795E42516A08CC2FBF7B27B1DCDCE /* Resources */,
-				4F7648D129FE0547492870D08C8DEF40 /* Support Files */,
+				C09F0EEF1B2BBE8A1F9424D2E22D5E92 /* Support Files */,
 			);
 			name = Cam;
 			path = ../..;
@@ -252,27 +251,46 @@
 			path = Cam/Classes;
 			sourceTree = "<group>";
 		};
+		1DEA7A0E2BF65288B950A5B39BF78A7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C18FA688099815CAC2ECD28A7909218 /* Designer */,
+				8D22C16637A9A9804748B8B42E4CB9C8 /* Extended */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		368B5B03B0D8D4C2B08D63DDD805C353 /* Pods-Cam_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C5CE4018E6DFB52793B0CC0B1EA277EA /* Pods-Cam_Example.modulemap */,
+				3C8395ABFF24FBB9FB48E7CD1382C7BA /* Pods-Cam_Example-acknowledgements.markdown */,
+				8D74EE8E16344D06AA8701C0D6F00856 /* Pods-Cam_Example-acknowledgements.plist */,
+				E531F8BD351D85D849B0329CB11C1088 /* Pods-Cam_Example-dummy.m */,
+				C74A7D22A369955E68A289A4A99B8FFE /* Pods-Cam_Example-frameworks.sh */,
+				3483DDEE6497889DFF85AD9C77660701 /* Pods-Cam_Example-Info.plist */,
+				D1D22139EBB677C34C7EEA57C93176E3 /* Pods-Cam_Example-umbrella.h */,
+				2FA5A50B70535731FFDCA978DED99DA5 /* Pods-Cam_Example.debug.xcconfig */,
+				2CA7E94B01FEE2989B46117AC7C3B3F5 /* Pods-Cam_Example.release.xcconfig */,
+			);
+			name = "Pods-Cam_Example";
+			path = "Target Support Files/Pods-Cam_Example";
+			sourceTree = "<group>";
+		};
+		39191F6ECB98F79450D0F863A1ED7466 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05B2821986FB18CDB9CC0C37066BA3C9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		3E70E4C870C0B9D39CF56DD12E1BC6E6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				066B8F2B71ED985ACB7A91DECC1ADDC3 /* Cam */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4F7648D129FE0547492870D08C8DEF40 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				30475803D439BCC9601AF62B4A183895 /* Cam.modulemap */,
-				8BB1232900E5F67BB8B5F860561D0035 /* Cam.xcconfig */,
-				609F725003348FE105CFDA3355914742 /* Cam-dummy.m */,
-				1AC9B553AC1DE3A2277AA11F0CFC07BF /* Cam-prefix.pch */,
-				ABD38775C31CA1EAE100CAA8C2250C4A /* Cam-umbrella.h */,
-				7D1F37DC8F154149EAA279CDFB73B8B2 /* Info.plist */,
-				50C1C1AA43288D1D64DAA41019EF3191 /* ResourceBundle-Cam-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Cam";
 			sourceTree = "<group>";
 		};
 		521E4D14C3C89D66BC8E8BB6EFC0A831 /* Assets */ = {
@@ -285,31 +303,28 @@
 			path = Cam/Assets;
 			sourceTree = "<group>";
 		};
-		65238326CD8BF6208608EE17F0BDCE2C /* Pods-Cam_Example */ = {
+		7AF667C346D1B974ED8B787285F13300 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CDF52480EEC6755E1C96909A81FBF02C /* Info.plist */,
-				C43A353E7268A1637FCFB37B57878430 /* Pods-Cam_Example.modulemap */,
-				BA52F11B91E53A93E684D4A954AA8E73 /* Pods-Cam_Example-acknowledgements.markdown */,
-				CB26FD458F18120AE07DA5292FEB2300 /* Pods-Cam_Example-acknowledgements.plist */,
-				C905CA36CB422752DE5323DC910AD660 /* Pods-Cam_Example-dummy.m */,
-				023BA1A48157828B271E1A2D0D25C2F1 /* Pods-Cam_Example-frameworks.sh */,
-				D87AAFE06D0DB091E21446A3A286DC5B /* Pods-Cam_Example-resources.sh */,
-				97BB3879F46EFE9529957DB844FCF7D9 /* Pods-Cam_Example-umbrella.h */,
-				0A06A70964EEC95D3E9FCAFBDFC68432 /* Pods-Cam_Example.debug.xcconfig */,
-				60A2C5CFADB47E22B1C81FC7A9FE76AC /* Pods-Cam_Example.release.xcconfig */,
+				B28D570693C7E5D03400C72CF1176811 /* Extended.modulemap */,
+				9B599163A55326F86A81F1DF06ABA46A /* Extended.xcconfig */,
+				B24163F358751B98EAD44680D34BA8EB /* Extended-dummy.m */,
+				9C81B08F68EA96D555ADEA0C11E3A32B /* Extended-Info.plist */,
+				7238676C00E041E3FB4E752F9059F540 /* Extended-prefix.pch */,
+				C79212B446ECA1DD1F10B3F2F8CE40E3 /* Extended-umbrella.h */,
 			);
-			name = "Pods-Cam_Example";
-			path = "Target Support Files/Pods-Cam_Example";
+			name = "Support Files";
+			path = "../Target Support Files/Extended";
 			sourceTree = "<group>";
 		};
-		71900B094068E6EC3BC25F1F71C1351B /* Pods */ = {
+		7C18FA688099815CAC2ECD28A7909218 /* Designer */ = {
 			isa = PBXGroup;
 			children = (
-				AD0055F376B71138F6F65C875841782D /* Designer */,
-				8981913B39D476B142FD61E528E54B8D /* Extended */,
+				9DF391661968D66901499C56F17D20AF /* Designer.swift */,
+				B8FDCF6ACB1D207E63880C57BFC877F3 /* Support Files */,
 			);
-			name = Pods;
+			name = Designer;
+			path = Designer;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -318,52 +333,47 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				3E70E4C870C0B9D39CF56DD12E1BC6E6 /* Development Pods */,
 				A922DFE9CC84686B7B886C3A413C6947 /* Frameworks */,
-				71900B094068E6EC3BC25F1F71C1351B /* Pods */,
+				1DEA7A0E2BF65288B950A5B39BF78A7E /* Pods */,
 				CB45B2F8CA56DC578F8A54D5E6FB0E21 /* Products */,
-				AD8A3C75E76124BFB2FBAEA392811A5D /* Targets Support Files */,
+				CA84C96655035EDADFD3E5917D2A15DD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7EF09D8142565AD51E0E022C2E691C13 /* Support Files */ = {
+		8D22C16637A9A9804748B8B42E4CB9C8 /* Extended */ = {
 			isa = PBXGroup;
 			children = (
-				4D61A543B820751401B53A02E2F86DBA /* Extended.modulemap */,
-				B3EB697E5F3B852E7930DB0B5A9C2910 /* Extended.xcconfig */,
-				402F0E08E7436DC7013F8D5B00360560 /* Extended-dummy.m */,
-				B3B6D78F2E495FBBCA1D92AFB38DF3B1 /* Extended-prefix.pch */,
-				48D3314BE744FBB63C3827A3E1F824A4 /* Extended-umbrella.h */,
-				F30A158D2EE7B66DEC9A30AD63D57E79 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Extended";
-			sourceTree = "<group>";
-		};
-		8981913B39D476B142FD61E528E54B8D /* Extended */ = {
-			isa = PBXGroup;
-			children = (
-				F14BBE7942DC3D47323811296F983AF5 /* Color.swift */,
-				DE9666FCAF092D3B45A8132470EC2D81 /* Date.swift */,
-				8D70FFE0002288BE2070D094969B9DFD /* DeviceOrientation.swift */,
-				C089088D5B6B30753E046ACEB45376DE /* Int.swift */,
-				2A32512E765BC67559AA25B5FF84DA69 /* Map.swift */,
-				A8B83F87770E80EED56AAC73C497A73E /* String.swift */,
-				8E86E55D9D1B527DD2C6315A2C338E0B /* TimeInterval.swift */,
-				A42084C68D7A2A1C3797156757867073 /* UIApplication.swift */,
-				7C1263BA7E73B7E5A0B99E4DF021C8B8 /* UILabel.swift */,
-				0127FBB76846E69708EB530A0ACB1647 /* UIView.swift */,
-				7714D42611514CF11CEA69BC1ECFACE9 /* UIViewController.swift */,
-				7EF09D8142565AD51E0E022C2E691C13 /* Support Files */,
+				4DBB0A92C43E21F737CADA00FF049C09 /* Color.swift */,
+				E6D83809E7334F2252C46E1CB0D86222 /* Date.swift */,
+				E76B7EBB3499C5F9EFAE32F855C2655C /* DeviceOrientation.swift */,
+				A90578E58244EA90D35C93357FE092AC /* Int.swift */,
+				6A088042405F9C04CA1606E4C463A14E /* Map.swift */,
+				C43946560A783610D57C12723B112B67 /* String.swift */,
+				4A229C499365C381BEFAA5E8BA863D4B /* TimeInterval.swift */,
+				57739C0732202286FDB88BFE938D2E00 /* UIApplication.swift */,
+				72CF4749AD943FEBF9777CB35117B440 /* UICollectionView.swift */,
+				888FAA661B8A67341597024E25DE0DF9 /* UILabel.swift */,
+				2CD6ADAE171ED0AF3F2E2613E39480E5 /* UIView.swift */,
+				BB65538C09CE99680C55AA1BCB59939C /* UIViewController.swift */,
+				7AF667C346D1B974ED8B787285F13300 /* Support Files */,
 			);
 			name = Extended;
 			path = Extended;
 			sourceTree = "<group>";
 		};
-		9D252A9082AA79B9C00D9BB2EA6CD299 /* iOS */ = {
+		8E84CE12BC40A22DD6067CA7421EB0D9 /* Pods-Cam_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9D991AFAD5F878C17F1A3C275A92DE1C /* Foundation.framework */,
+				849647FB1938E71BD7C5950D08D8FC04 /* Pods-Cam_Tests.modulemap */,
+				97D7E69829E2CD70243BE037B259768C /* Pods-Cam_Tests-acknowledgements.markdown */,
+				3EF89704850B9FDCC3E63B57A4D2BE61 /* Pods-Cam_Tests-acknowledgements.plist */,
+				C7A8677ACF9F479CB077127523CFE8CF /* Pods-Cam_Tests-dummy.m */,
+				43706C865FA155698FA3D24520A65F21 /* Pods-Cam_Tests-Info.plist */,
+				F060054DD31BEFE5425A1503E0019962 /* Pods-Cam_Tests-umbrella.h */,
+				A4FE4BB66E676963E460E1C6A895BF01 /* Pods-Cam_Tests.debug.xcconfig */,
+				2CA205E4A5AECB7EE664927C4342CAE4 /* Pods-Cam_Tests.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-Cam_Tests";
+			path = "Target Support Files/Pods-Cam_Tests";
 			sourceTree = "<group>";
 		};
 		9DB795E42516A08CC2FBF7B27B1DCDCE /* Resources */ = {
@@ -375,47 +385,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		A296C5D3EFDDCA2A4927A1CD2A69547E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				655990AFFF0D960380F306F2A0337D45 /* Designer.modulemap */,
-				FA49EC690FC4A6DA0AAEA54AF5B9CB8F /* Designer.xcconfig */,
-				57A3156018368F36E40A28FA92E03329 /* Designer-dummy.m */,
-				9F384181B5C1B8EC35AE36D8604CC673 /* Designer-prefix.pch */,
-				4A68FCCCB00889B277E6FBE95AC49C69 /* Designer-umbrella.h */,
-				0FFE677799540E64AB9D46B8012A962E /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Designer";
-			sourceTree = "<group>";
-		};
 		A922DFE9CC84686B7B886C3A413C6947 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				2B0AFE4C83A9C9BD685E532CF5846714 /* Designer.framework */,
 				7D418C75E8DA805CDD3212293A2CF28D /* Extended.framework */,
-				9D252A9082AA79B9C00D9BB2EA6CD299 /* iOS */,
+				39191F6ECB98F79450D0F863A1ED7466 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AD0055F376B71138F6F65C875841782D /* Designer */ = {
-			isa = PBXGroup;
-			children = (
-				7D9F9B7C408B0CF2263EF2EBFF744B41 /* Designer.swift */,
-				A296C5D3EFDDCA2A4927A1CD2A69547E /* Support Files */,
-			);
-			name = Designer;
-			path = Designer;
-			sourceTree = "<group>";
-		};
-		AD8A3C75E76124BFB2FBAEA392811A5D /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				65238326CD8BF6208608EE17F0BDCE2C /* Pods-Cam_Example */,
-				CEBA7C9BDD5BA14D442DF0E2B774E5B9 /* Pods-Cam_Tests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		B83E811CC21B85BFB0D6F6BF870E9F86 /* Pod */ = {
@@ -426,6 +403,44 @@
 				CBED7B941FD687D6B86A4DD556BB884F /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		B8FDCF6ACB1D207E63880C57BFC877F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E51B99C67F617BD9F90033653D218322 /* Designer.modulemap */,
+				CBC7AC357BAD3042071813698BA3A23F /* Designer.xcconfig */,
+				625D82E141B6F4DA2E0193DCFCD023F7 /* Designer-dummy.m */,
+				22BF33FCAFF3703E32CDEBA22F15C317 /* Designer-Info.plist */,
+				55E39EE29FEC1BB9D86642107E441AF9 /* Designer-prefix.pch */,
+				DA7A261005D7EC8DDB62D6B6CB0977C0 /* Designer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Designer";
+			sourceTree = "<group>";
+		};
+		C09F0EEF1B2BBE8A1F9424D2E22D5E92 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C85E4F765D152796E7205C6353A26771 /* Cam.modulemap */,
+				B65B54A706B4C1BFC05AE95884300A22 /* Cam.xcconfig */,
+				889C73AF07F6D9DE9F514CD19490ED08 /* Cam-dummy.m */,
+				65BAB237D3B58DAB92AE5F5AD8D4C7ED /* Cam-Info.plist */,
+				26EC715B1AF4BC898F613AA8BE0D2EC0 /* Cam-prefix.pch */,
+				7FA2EFA3F137F04F70575DCAD2469DFE /* Cam-umbrella.h */,
+				DCA68955E07095066905DE3BD9646010 /* ResourceBundle-Cam-Cam-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Cam";
+			sourceTree = "<group>";
+		};
+		CA84C96655035EDADFD3E5917D2A15DD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				368B5B03B0D8D4C2B08D63DDD805C353 /* Pods-Cam_Example */,
+				8E84CE12BC40A22DD6067CA7421EB0D9 /* Pods-Cam_Tests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CB45B2F8CA56DC578F8A54D5E6FB0E21 /* Products */ = {
@@ -441,77 +456,81 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEBA7C9BDD5BA14D442DF0E2B774E5B9 /* Pods-Cam_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				77704862E32886D131343A8E63EBAB34 /* Info.plist */,
-				23CE1A46FD6E53DBEE6A23A69B6BF464 /* Pods-Cam_Tests.modulemap */,
-				4EA6BCFA4E6583B089C61303B8D4BBDE /* Pods-Cam_Tests-acknowledgements.markdown */,
-				A9E8F2BD6D0BF712412DD0EECAD96ACF /* Pods-Cam_Tests-acknowledgements.plist */,
-				FEEB7C5530A20D39344C43E462DBBA65 /* Pods-Cam_Tests-dummy.m */,
-				3D91F8A69E64CFF1C8563A8126E786A5 /* Pods-Cam_Tests-frameworks.sh */,
-				3133FC4FD547F1B61D8D9237737FB89F /* Pods-Cam_Tests-resources.sh */,
-				7554E884B6C5CA2F8380CA9B8B4FC3CE /* Pods-Cam_Tests-umbrella.h */,
-				DB2C8CE2024E64E94CB217E0EA1AD3B0 /* Pods-Cam_Tests.debug.xcconfig */,
-				2F7669F8EABCED419E862C8E3A2D2F10 /* Pods-Cam_Tests.release.xcconfig */,
-			);
-			name = "Pods-Cam_Tests";
-			path = "Target Support Files/Pods-Cam_Tests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		24451EC775AF7DCCA9252DB1DCA756BE /* Headers */ = {
+		1FA3C83A0F9D576D78038D658174E3F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF9C9AC958F8ACE814B0C73BF1C234A7 /* Designer-umbrella.h in Headers */,
+				3C22856EBDA4F2E404F6B6CD9E200131 /* Pods-Cam_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24C4645A2DE06034741C68A038E41F7B /* Headers */ = {
+		3EE0C066FA357B6672D0C3DD49193F1E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				618C6955B1D08A1BCE83C964D52DDB7B /* Pods-Cam_Example-umbrella.h in Headers */,
+				28D92C57E68B01F5A229D4D682BDDAF1 /* Cam-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		995045FE4CD33B7F8232F0CA0B71FD70 /* Headers */ = {
+		531775D81D186454D229B94B6A6369A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3C3786B0114565ADA572E16F635752 /* Cam-umbrella.h in Headers */,
+				EBAAED34A0600434862F15966E682AE2 /* Pods-Cam_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA2F18C55BABCFEEE895A376BA3CE42D /* Headers */ = {
+		965C01833D94DE0AECAAE50259AF77D7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189DF81506F5DF4D1A6E5F0F5D6CB695 /* Extended-umbrella.h in Headers */,
+				0F4A0DA1D528D26BA56878135A2978C4 /* Designer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CAC53CC3719FE2F28239263D8A20505A /* Headers */ = {
+		E608D98E28068DB3FFBA0247DEBA6559 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F617C1A6D1269A70371A9377F1891FD /* Pods-Cam_Tests-umbrella.h in Headers */,
+				C24A84FB89CC7AC832FB202E68F9E5B5 /* Extended-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		399F930412BBDA1AF53827992CA2F407 /* Extended */ = {
+		07EC22D827D63F051D77F3E277F4B70D /* Cam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E540D0B673A09B5A77BDA9FE160865B /* Build configuration list for PBXNativeTarget "Extended" */;
+			buildConfigurationList = DC2DC449DAFFF20585DE5FC773203B9F /* Build configuration list for PBXNativeTarget "Cam" */;
 			buildPhases = (
-				9F53586A7308F30BB5C4AE0B81FC0D3B /* Sources */,
-				E836F0E554206D64227149D2D3248874 /* Frameworks */,
-				CA2F18C55BABCFEEE895A376BA3CE42D /* Headers */,
+				3EE0C066FA357B6672D0C3DD49193F1E /* Headers */,
+				D8EE031898533F7B951E8654E176D847 /* Sources */,
+				C92FA608B5851B636D5A947C71FB494B /* Frameworks */,
+				F3F097F3085ABFD6C9C0CDE1419DAC23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				545DF1613555334CA73D5B68B05C50CF /* PBXTargetDependency */,
+				7DCED6DB63EEE49F4E176EB9CA6A507D /* PBXTargetDependency */,
+				C622491B418BCDBC6D2C0BE657E8D98D /* PBXTargetDependency */,
+			);
+			name = Cam;
+			productName = Cam;
+			productReference = 8D53642C443405D9CA0AFEAC3B1E70C2 /* Cam.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C6B90CE03F27EDF078C1E82A774770D /* Extended */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689BFED2957BBE4691548B88D17ED718 /* Build configuration list for PBXNativeTarget "Extended" */;
+			buildPhases = (
+				E608D98E28068DB3FFBA0247DEBA6559 /* Headers */,
+				18A25D763B255BFCB0AB9CA0C20659D1 /* Sources */,
+				AF096E2BB3ECF3FA4CDB54E21B9E2FB6 /* Frameworks */,
+				AE5E6A39CE1A703A04F5C69B09100FB1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -522,31 +541,33 @@
 			productReference = 159975D2207340C742FFDCB7BCA46C93 /* Extended.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		55E8C58B10587B82FB1C670D1FE934E5 /* Pods-Cam_Tests */ = {
+		3496047B76626D0F3197C6877FC7BEE4 /* Pods-Cam_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C1CD9DD9636496A879A38F6753682C1 /* Build configuration list for PBXNativeTarget "Pods-Cam_Tests" */;
+			buildConfigurationList = 449BAF1D881EDAD50953F11AD30BF3BA /* Build configuration list for PBXNativeTarget "Pods-Cam_Tests" */;
 			buildPhases = (
-				7EDBBEE44769AA0697F5AB6BB3EB4999 /* Sources */,
-				7C2A424F3CBFC5AE006A4D8978DE3FFA /* Frameworks */,
-				CAC53CC3719FE2F28239263D8A20505A /* Headers */,
+				531775D81D186454D229B94B6A6369A2 /* Headers */,
+				E8FA72C9528391BC77E0D9724DDEEE63 /* Sources */,
+				4E0C1719CE8CBAE95C59E8961AB5D591 /* Frameworks */,
+				6A7F6AE05FB4602126B71F09DF5173E2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				369C6AF569CC4D9D30D924B5297DC39D /* PBXTargetDependency */,
+				48D493836B214A61F7548F609E7E4E46 /* PBXTargetDependency */,
 			);
 			name = "Pods-Cam_Tests";
 			productName = "Pods-Cam_Tests";
 			productReference = 16158B54CB4CF3E5AF59ACCEFFEE4A84 /* Pods_Cam_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7CCEEF00DD408B0A2C378280B2276172 /* Designer */ = {
+		4CAAFC4CB313DB28CD226F80B9C6F93F /* Designer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54A4CE02F524907606D3E09ECABD5BBC /* Build configuration list for PBXNativeTarget "Designer" */;
+			buildConfigurationList = 7139AE47264CFBA52CF7E98C4C12BCE8 /* Build configuration list for PBXNativeTarget "Designer" */;
 			buildPhases = (
-				8B1928BC43ECE767160C8F5DEAC6F035 /* Sources */,
-				8AA5CD6DC03E37EFA8E41A8E7F86911F /* Frameworks */,
-				24451EC775AF7DCCA9252DB1DCA756BE /* Headers */,
+				965C01833D94DE0AECAAE50259AF77D7 /* Headers */,
+				B16A56A40FACF94AEC99239DFCE05A53 /* Sources */,
+				AA4188E758EA15198260DAE18E541FA5 /* Frameworks */,
+				FC8AD6CAE9CFFA62BE8ABB9B67742361 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -557,13 +578,34 @@
 			productReference = B6C4A8214A097974D7B14ECCC9BBB241 /* Designer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		85DCDB1D0AEB60A583AF4EEE3F6B265D /* Cam-Cam */ = {
+		554BAC35F0460051F1D7E1B276A91194 /* Pods-Cam_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDD7AB23824CF44BC9F0DED50682A804 /* Build configuration list for PBXNativeTarget "Cam-Cam" */;
+			buildConfigurationList = 311D2A243A30BE19FEEC7C72C6ED1E02 /* Build configuration list for PBXNativeTarget "Pods-Cam_Example" */;
 			buildPhases = (
-				A5848EA21297374A758DB8D668E1B3F3 /* Sources */,
-				C95D89286B16DCFAE00F82E2BE2FBDCE /* Frameworks */,
-				9ACDE12883E02C09DB2531512A64B1F1 /* Resources */,
+				1FA3C83A0F9D576D78038D658174E3F6 /* Headers */,
+				EB14661CBBAF179DD7C30577C80CA955 /* Sources */,
+				931375695ABF5E13727E9E5CC7DE42A8 /* Frameworks */,
+				ECE2386560CD7B1E36EE66B6B3C5D45E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D31630633EEFD0F22D786F4DD5031335 /* PBXTargetDependency */,
+				DF2B15AF419F22D924E2925A6E4B5339 /* PBXTargetDependency */,
+				F539276494FF762C40C5C59AD40EEFEE /* PBXTargetDependency */,
+			);
+			name = "Pods-Cam_Example";
+			productName = "Pods-Cam_Example";
+			productReference = 2A629192261C03FC9A5812853AF962F8 /* Pods_Cam_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD49D3897075D6142E04499CC9AF979E /* Cam-Cam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9C619CBFB1572E8F8FF5E0F5A6DA76 /* Build configuration list for PBXNativeTarget "Cam-Cam" */;
+			buildPhases = (
+				F914DAECDC14A86512FC0796F39E6A8C /* Sources */,
+				11D6CEECD6160E085261261B3F1C95C0 /* Frameworks */,
+				337656C5016D81D49C4CB6EC862BFACF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -573,47 +615,6 @@
 			productName = "Cam-Cam";
 			productReference = 984E8C5D2D6CB704231BAF2092B00F14 /* Cam.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		B124CDF7C3EF2C8213F86B9C214F383F /* Pods-Cam_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E2FD8D509EE5BA1FEB1D9FCAA96B57C /* Build configuration list for PBXNativeTarget "Pods-Cam_Example" */;
-			buildPhases = (
-				84E2E6C3B63A9A61A8C51E394B8C94FC /* Sources */,
-				2C162BA648C723726C1358A5F0A9C26F /* Frameworks */,
-				24C4645A2DE06034741C68A038E41F7B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D8DF074885B64DC43E6B43727F400EF2 /* PBXTargetDependency */,
-				195DA1D3247F4DEA58A13D1F75E1C43E /* PBXTargetDependency */,
-				3AC5CCB421CB75461151A45E92912828 /* PBXTargetDependency */,
-			);
-			name = "Pods-Cam_Example";
-			productName = "Pods-Cam_Example";
-			productReference = 2A629192261C03FC9A5812853AF962F8 /* Pods_Cam_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C41618875A6AB2CF7BAA71C68846DA2A /* Cam */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5D985440243DB7A31711F75FF375CA91 /* Build configuration list for PBXNativeTarget "Cam" */;
-			buildPhases = (
-				01288030E2DDD2F0AD5BAC39831EBDD5 /* Sources */,
-				556E71C996C5766E7417EE258E4073C6 /* Frameworks */,
-				9AD81F6CFA36555FAA169B99C0EAA5E8 /* Resources */,
-				995045FE4CD33B7F8232F0CA0B71FD70 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				67B4478A6BCD2BCEC8EC1E30E0501345 /* PBXTargetDependency */,
-				669FEF236F17574485B8DDE2A6897F46 /* PBXTargetDependency */,
-				4E3E1251001377D93389777AD56AB065 /* PBXTargetDependency */,
-			);
-			name = Cam;
-			productName = Cam;
-			productReference = 8D53642C443405D9CA0AFEAC3B1E70C2 /* Cam.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -636,96 +637,125 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C41618875A6AB2CF7BAA71C68846DA2A /* Cam */,
-				85DCDB1D0AEB60A583AF4EEE3F6B265D /* Cam-Cam */,
-				7CCEEF00DD408B0A2C378280B2276172 /* Designer */,
-				399F930412BBDA1AF53827992CA2F407 /* Extended */,
-				B124CDF7C3EF2C8213F86B9C214F383F /* Pods-Cam_Example */,
-				55E8C58B10587B82FB1C670D1FE934E5 /* Pods-Cam_Tests */,
+				07EC22D827D63F051D77F3E277F4B70D /* Cam */,
+				CD49D3897075D6142E04499CC9AF979E /* Cam-Cam */,
+				4CAAFC4CB313DB28CD226F80B9C6F93F /* Designer */,
+				0C6B90CE03F27EDF078C1E82A774770D /* Extended */,
+				554BAC35F0460051F1D7E1B276A91194 /* Pods-Cam_Example */,
+				3496047B76626D0F3197C6877FC7BEE4 /* Pods-Cam_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9ACDE12883E02C09DB2531512A64B1F1 /* Resources */ = {
+		337656C5016D81D49C4CB6EC862BFACF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7E4F0F776EF38C198B84DED773BD6E /* Cam.storyboard in Resources */,
-				6A1682694EC8CB562E5F32DCC81C22C1 /* cancel.png in Resources */,
-				BC467F069FCF2B6CB5E8394CB2461C50 /* garbage.png in Resources */,
-				6F867FB0B9116357F6324340041D4107 /* PreviewView.xib in Resources */,
+				BC2E5376A96BA5F128FA6B85C727BFBD /* Cam.storyboard in Resources */,
+				AA4F82CB21639899B61A441F99156C99 /* cancel.png in Resources */,
+				FE68FAFA0CEA7B5F48D5D5B6C60F74D4 /* garbage.png in Resources */,
+				54AD311F54013743E0B78FC1D480CC45 /* PreviewView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AD81F6CFA36555FAA169B99C0EAA5E8 /* Resources */ = {
+		6A7F6AE05FB4602126B71F09DF5173E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A91E6A8C778C66B6C46E97C5925FD9B /* Cam.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5E6A39CE1A703A04F5C69B09100FB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECE2386560CD7B1E36EE66B6B3C5D45E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F097F3085ABFD6C9C0CDE1419DAC23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EA21DD42586979B5E2875605E15BE3E /* Cam.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8AD6CAE9CFFA62BE8ABB9B67742361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01288030E2DDD2F0AD5BAC39831EBDD5 /* Sources */ = {
+		18A25D763B255BFCB0AB9CA0C20659D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5C677029326E3E368F59D08DE50D05 /* Cam-dummy.m in Sources */,
-				1BD7F02CCF60EA29951CF3111EE0EA4E /* Cam.swift in Sources */,
-				8F3410F4C5E29D770753D22B17346EF8 /* CamPhoto.swift in Sources */,
-				A8C46EB28E8449177D400E9A7DB85199 /* CamViewController.swift in Sources */,
-				03622AF1E5F361045E1A59D85259BAFC /* PreviewView.swift in Sources */,
+				7DE4EB16B3C173227D4E69F4B7954BB1 /* Color.swift in Sources */,
+				E09D0728DA1382E2E554AB74F88BA6C2 /* Date.swift in Sources */,
+				02CB2936FE45186A6B6DAB5479377F28 /* DeviceOrientation.swift in Sources */,
+				0FDDCDF8C09B72EC3353334B75694FEE /* Extended-dummy.m in Sources */,
+				DC3C51D9F87F960B71A4DB60330CBCD9 /* Int.swift in Sources */,
+				FD8871C7A17C5788C74C342A4D105112 /* Map.swift in Sources */,
+				4F1BEE6D034E6A54975D5362EECD5D82 /* String.swift in Sources */,
+				64F7791A03B03F6F0D1A23104C5CAA20 /* TimeInterval.swift in Sources */,
+				D8A8100D2510DAD866EBA379AEA8C95A /* UIApplication.swift in Sources */,
+				46EA52143B29C5BE22680DB53DF36FC6 /* UICollectionView.swift in Sources */,
+				B894F44E1BA9F22695BCFC4E640899F9 /* UILabel.swift in Sources */,
+				C5CC4CC97960F020DCF88DB5DD8BAD03 /* UIView.swift in Sources */,
+				16674B9DDC9A3486DC4496799F2CBC54 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EDBBEE44769AA0697F5AB6BB3EB4999 /* Sources */ = {
+		B16A56A40FACF94AEC99239DFCE05A53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E716CC1528A6C3DCCEB8C82EB197730D /* Pods-Cam_Tests-dummy.m in Sources */,
+				3C11DCB6AD7BD3BABF870D36DE74A995 /* Designer-dummy.m in Sources */,
+				E9083E9A1227AE3CBCFCCD3DAA81D88B /* Designer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84E2E6C3B63A9A61A8C51E394B8C94FC /* Sources */ = {
+		D8EE031898533F7B951E8654E176D847 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20AAA4162F50EDE38D765A54D34F286 /* Pods-Cam_Example-dummy.m in Sources */,
+				639360FD262F462C9070F3C61397E5FC /* Cam-dummy.m in Sources */,
+				0B0181B7929D0F1220E9AE73585A3BBC /* Cam.swift in Sources */,
+				F53F2D9229552B5EA1A13BC19A1329DA /* CamPhoto.swift in Sources */,
+				A6D43EC5A8EC5AF3BB0464811BB347F3 /* CamViewController.swift in Sources */,
+				163C03EF533FE0D664445CB6554CA8CB /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B1928BC43ECE767160C8F5DEAC6F035 /* Sources */ = {
+		E8FA72C9528391BC77E0D9724DDEEE63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5606FA6CB6E35436A046062C8314F31C /* Designer-dummy.m in Sources */,
-				13FE8FFB0D7CEDF1215C8BDC36D6620B /* Designer.swift in Sources */,
+				65B4A380EE008C6A0FAD501B2B65C046 /* Pods-Cam_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F53586A7308F30BB5C4AE0B81FC0D3B /* Sources */ = {
+		EB14661CBBAF179DD7C30577C80CA955 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3EE21C36D23C6967450283D43F4902B /* Color.swift in Sources */,
-				34AD2EFA070977F2C70C4F872F56CC9B /* Date.swift in Sources */,
-				81CBB4730859A15C881FF11F70806A77 /* DeviceOrientation.swift in Sources */,
-				BF88C38D58AE917D1B66C74F94712C9A /* Extended-dummy.m in Sources */,
-				976B2422F7825BA3C90F54BBCF4C8B9F /* Int.swift in Sources */,
-				D9C1D04189C097BDC7C0FE005A9CF422 /* Map.swift in Sources */,
-				133C70C68055EA0384C2EDAA463B9D89 /* String.swift in Sources */,
-				ABB4446D5D37B4F0C630BDDF5CB71CEF /* TimeInterval.swift in Sources */,
-				247268F10D0E8774596970F9CA1504B1 /* UIApplication.swift in Sources */,
-				85A6D3136D6D1081D255E2D9A3C456B1 /* UILabel.swift in Sources */,
-				6D7FCF8DAE3498F829007F62DBFC665E /* UIView.swift in Sources */,
-				BF10D37DCE9583BE611055BDC62E18A4 /* UIViewController.swift in Sources */,
+				39AFBEE7566C70C813E0622501A6C081 /* Pods-Cam_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5848EA21297374A758DB8D668E1B3F3 /* Sources */ = {
+		F914DAECDC14A86512FC0796F39E6A8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -735,147 +765,56 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		195DA1D3247F4DEA58A13D1F75E1C43E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Designer;
-			target = 7CCEEF00DD408B0A2C378280B2276172 /* Designer */;
-			targetProxy = D3F0B26DE993D78324806E57AB4077C5 /* PBXContainerItemProxy */;
-		};
-		369C6AF569CC4D9D30D924B5297DC39D /* PBXTargetDependency */ = {
+		48D493836B214A61F7548F609E7E4E46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Cam_Example";
-			target = B124CDF7C3EF2C8213F86B9C214F383F /* Pods-Cam_Example */;
-			targetProxy = DEEFADFF59D182368D999667A9BE24FF /* PBXContainerItemProxy */;
+			target = 554BAC35F0460051F1D7E1B276A91194 /* Pods-Cam_Example */;
+			targetProxy = 115A5B970ECEA862D906DCC4A29116FD /* PBXContainerItemProxy */;
 		};
-		3AC5CCB421CB75461151A45E92912828 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Extended;
-			target = 399F930412BBDA1AF53827992CA2F407 /* Extended */;
-			targetProxy = C25390AFD8DE2A8924FB9CB4CB6C40D2 /* PBXContainerItemProxy */;
-		};
-		4E3E1251001377D93389777AD56AB065 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Extended;
-			target = 399F930412BBDA1AF53827992CA2F407 /* Extended */;
-			targetProxy = 08C43AAD48887C839E3C459B88C61D20 /* PBXContainerItemProxy */;
-		};
-		669FEF236F17574485B8DDE2A6897F46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Designer;
-			target = 7CCEEF00DD408B0A2C378280B2276172 /* Designer */;
-			targetProxy = C07AB4B816D87492822E548C89B3B6DD /* PBXContainerItemProxy */;
-		};
-		67B4478A6BCD2BCEC8EC1E30E0501345 /* PBXTargetDependency */ = {
+		545DF1613555334CA73D5B68B05C50CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Cam-Cam";
-			target = 85DCDB1D0AEB60A583AF4EEE3F6B265D /* Cam-Cam */;
-			targetProxy = 73917AE98712C7E5AC9DBD7C26F6EFC6 /* PBXContainerItemProxy */;
+			target = CD49D3897075D6142E04499CC9AF979E /* Cam-Cam */;
+			targetProxy = 11157489AC5F81AC4ED757DC87796813 /* PBXContainerItemProxy */;
 		};
-		D8DF074885B64DC43E6B43727F400EF2 /* PBXTargetDependency */ = {
+		7DCED6DB63EEE49F4E176EB9CA6A507D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Designer;
+			target = 4CAAFC4CB313DB28CD226F80B9C6F93F /* Designer */;
+			targetProxy = A939371CACEF08B83D600167CACB0C88 /* PBXContainerItemProxy */;
+		};
+		C622491B418BCDBC6D2C0BE657E8D98D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Extended;
+			target = 0C6B90CE03F27EDF078C1E82A774770D /* Extended */;
+			targetProxy = 5AB62D50884F2E616BA4A224FC3C9B0F /* PBXContainerItemProxy */;
+		};
+		D31630633EEFD0F22D786F4DD5031335 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cam;
-			target = C41618875A6AB2CF7BAA71C68846DA2A /* Cam */;
-			targetProxy = 0BDFCCFF583AF3711C026042D377FC2F /* PBXContainerItemProxy */;
+			target = 07EC22D827D63F051D77F3E277F4B70D /* Cam */;
+			targetProxy = ADD39979C5C52E83E7032E0F649CB9AA /* PBXContainerItemProxy */;
+		};
+		DF2B15AF419F22D924E2925A6E4B5339 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Designer;
+			target = 4CAAFC4CB313DB28CD226F80B9C6F93F /* Designer */;
+			targetProxy = CCD0963F2800E6D67917035E60EFE1C9 /* PBXContainerItemProxy */;
+		};
+		F539276494FF762C40C5C59AD40EEFEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Extended;
+			target = 0C6B90CE03F27EDF078C1E82A774770D /* Extended */;
+			targetProxy = DCD50203A98F26D3302A974F5043EAD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+		1780E20ACEBCA721E1406AE28005FC0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC7AC357BAD3042071813698BA3A23F /* Designer.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		0C1703509C55965AF3DB3B27D7D8B1E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB1232900E5F67BB8B5F860561D0035 /* Cam.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Cam/Cam-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cam/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Cam/Cam.modulemap";
-				PRODUCT_MODULE_NAME = Cam;
-				PRODUCT_NAME = Cam;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		211EA85F145B9ADB9BF63DC131B8E40B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA49EC690FC4A6DA0AAEA54AF5B9CB8F /* Designer.xcconfig */;
-			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -887,7 +826,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/Designer/Designer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Designer/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Designer/Designer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -897,7 +836,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -906,79 +846,11 @@
 			};
 			name = Release;
 		};
-		2ECECB8DAFA6A45C6214500F3362B90E /* Debug */ = {
+		1E428062AD4924B8B4188ECFEF51F6A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA49EC690FC4A6DA0AAEA54AF5B9CB8F /* Designer.xcconfig */;
+			baseConfigurationReference = 9B599163A55326F86A81F1DF06ABA46A /* Extended.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Designer/Designer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Designer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Designer/Designer.modulemap";
-				PRODUCT_MODULE_NAME = Designer;
-				PRODUCT_NAME = Designer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4A2534F4057DF67776F3063F6A74504E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A06A70964EEC95D3E9FCAFBDFC68432 /* Pods-Cam_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cam_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cam_Example/Pods-Cam_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5F6DD7536624F48384A56D3819007C76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3EB697E5F3B852E7930DB0B5A9C2910 /* Extended.xcconfig */;
-			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -990,7 +862,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/Extended/Extended-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Extended/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Extended/Extended-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1000,7 +872,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1009,26 +882,11 @@
 			};
 			name = Release;
 		};
-		6FEED5936829ADDB8D94A7CE2BB0F73F /* Debug */ = {
+		332DE50592282793991C189B09BADD02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB1232900E5F67BB8B5F860561D0035 /* Cam.xcconfig */;
+			baseConfigurationReference = 9B599163A55326F86A81F1DF06ABA46A /* Extended.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Cam";
-				INFOPLIST_FILE = "Target Support Files/Cam/ResourceBundle-Cam-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = Cam;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		802BF4CF6AAD7BB6A6CB7FBECBA65088 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB1232900E5F67BB8B5F860561D0035 /* Cam.xcconfig */;
-			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1039,14 +897,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Cam/Cam-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Cam/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Extended/Extended-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Extended/Extended-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Cam/Cam.modulemap";
-				PRODUCT_MODULE_NAME = Cam;
-				PRODUCT_NAME = Cam;
+				MODULEMAP_FILE = "Target Support Files/Extended/Extended.modulemap";
+				PRODUCT_MODULE_NAME = Extended;
+				PRODUCT_NAME = Extended;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1058,11 +916,12 @@
 			};
 			name = Debug;
 		};
-		8A107DD8969DCAED781B7F70F39025F6 /* Release */ = {
+		41DC8FFF5300FCCF4160FEB35CDD60BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60A2C5CFADB47E22B1C81FC7A9FE76AC /* Pods-Cam_Example.release.xcconfig */;
+			baseConfigurationReference = A4FE4BB66E676963E460E1C6A895BF01 /* Pods-Cam_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1073,7 +932,148 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cam_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cam_Tests/Pods-Cam_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cam_Tests/Pods-Cam_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BC17C8517EFACFFDE0335B28E70C5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA205E4A5AECB7EE664927C4342CAE4 /* Pods-Cam_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cam_Tests/Pods-Cam_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cam_Tests/Pods-Cam_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		720A4155031B1C6E631F04D8DB9A909D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B65B54A706B4C1BFC05AE95884300A22 /* Cam.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cam/Cam-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cam/Cam-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cam/Cam.modulemap";
+				PRODUCT_MODULE_NAME = Cam;
+				PRODUCT_NAME = Cam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78E68C3C857F68B5A8F5195697A61DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC7AC357BAD3042071813698BA3A23F /* Designer.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Designer/Designer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Designer/Designer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Designer/Designer.modulemap";
+				PRODUCT_MODULE_NAME = Designer;
+				PRODUCT_NAME = Designer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F333016DDB490DE12027FD74E2800A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA7E94B01FEE2989B46117AC7C3B3F5 /* Pods-Cam_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cam_Example/Pods-Cam_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1086,7 +1086,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1094,13 +1095,13 @@
 			};
 			name = Release;
 		};
-		8B6334EAB31336680E086B7A7D8CA46F /* Release */ = {
+		80736534D0B62D5DF5AA6E1933F28259 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BB1232900E5F67BB8B5F860561D0035 /* Cam.xcconfig */;
+			baseConfigurationReference = B65B54A706B4C1BFC05AE95884300A22 /* Cam.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Cam";
-				INFOPLIST_FILE = "Target Support Files/Cam/ResourceBundle-Cam-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Cam/ResourceBundle-Cam-Cam-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = Cam;
 				SDKROOT = iphoneos;
@@ -1108,9 +1109,9 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
-		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1164,7 +1165,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1173,10 +1175,11 @@
 			};
 			name = Debug;
 		};
-		A73668706D7D3D5BCC9D5423AF7D8EC8 /* Debug */ = {
+		AFB00B33D9E7337F76B3E2BD8CB2460D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3EB697E5F3B852E7930DB0B5A9C2910 /* Extended.xcconfig */;
+			baseConfigurationReference = B65B54A706B4C1BFC05AE95884300A22 /* Cam.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1187,14 +1190,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Extended/Extended-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Extended/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Cam/Cam-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cam/Cam-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Extended/Extended.modulemap";
-				PRODUCT_MODULE_NAME = Extended;
-				PRODUCT_NAME = Extended;
+				MODULEMAP_FILE = "Target Support Files/Cam/Cam.modulemap";
+				PRODUCT_MODULE_NAME = Cam;
+				PRODUCT_NAME = Cam;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1206,46 +1209,87 @@
 			};
 			name = Debug;
 		};
-		B7B2C90A135DD15D5E3A267ABE9C1A4B /* Release */ = {
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F7669F8EABCED419E862C8E3A2D2F10 /* Pods-Cam_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cam_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cam_Tests/Pods-Cam_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		BB3E74232E74367E2480A0C6EC5F237D /* Debug */ = {
+		D53CF9A08304150846C3680E86DA2151 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB2C8CE2024E64E94CB217E0EA1AD3B0 /* Pods-Cam_Tests.debug.xcconfig */;
+			baseConfigurationReference = B65B54A706B4C1BFC05AE95884300A22 /* Cam.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Cam";
+				INFOPLIST_FILE = "Target Support Files/Cam/ResourceBundle-Cam-Cam-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = Cam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F750EDAA9BD819D8306B9ADA8D7D2BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA5A50B70535731FFDCA978DED99DA5 /* Pods-Cam_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1256,12 +1300,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Cam_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Cam_Example/Pods-Cam_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cam_Tests/Pods-Cam_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Cam_Example/Pods-Cam_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1269,6 +1313,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1281,62 +1327,62 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
-				08638A96A528B1EC32DE62F8A728389D /* Release */,
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54A4CE02F524907606D3E09ECABD5BBC /* Build configuration list for PBXNativeTarget "Designer" */ = {
+		311D2A243A30BE19FEEC7C72C6ED1E02 /* Build configuration list for PBXNativeTarget "Pods-Cam_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2ECECB8DAFA6A45C6214500F3362B90E /* Debug */,
-				211EA85F145B9ADB9BF63DC131B8E40B /* Release */,
+				F750EDAA9BD819D8306B9ADA8D7D2BD7 /* Debug */,
+				7F333016DDB490DE12027FD74E2800A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C1CD9DD9636496A879A38F6753682C1 /* Build configuration list for PBXNativeTarget "Pods-Cam_Tests" */ = {
+		449BAF1D881EDAD50953F11AD30BF3BA /* Build configuration list for PBXNativeTarget "Pods-Cam_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB3E74232E74367E2480A0C6EC5F237D /* Debug */,
-				B7B2C90A135DD15D5E3A267ABE9C1A4B /* Release */,
+				41DC8FFF5300FCCF4160FEB35CDD60BF /* Debug */,
+				4BC17C8517EFACFFDE0335B28E70C5BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D985440243DB7A31711F75FF375CA91 /* Build configuration list for PBXNativeTarget "Cam" */ = {
+		689BFED2957BBE4691548B88D17ED718 /* Build configuration list for PBXNativeTarget "Extended" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				802BF4CF6AAD7BB6A6CB7FBECBA65088 /* Debug */,
-				0C1703509C55965AF3DB3B27D7D8B1E4 /* Release */,
+				332DE50592282793991C189B09BADD02 /* Debug */,
+				1E428062AD4924B8B4188ECFEF51F6A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E2FD8D509EE5BA1FEB1D9FCAA96B57C /* Build configuration list for PBXNativeTarget "Pods-Cam_Example" */ = {
+		7139AE47264CFBA52CF7E98C4C12BCE8 /* Build configuration list for PBXNativeTarget "Designer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A2534F4057DF67776F3063F6A74504E /* Debug */,
-				8A107DD8969DCAED781B7F70F39025F6 /* Release */,
+				78E68C3C857F68B5A8F5195697A61DC2 /* Debug */,
+				1780E20ACEBCA721E1406AE28005FC0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E540D0B673A09B5A77BDA9FE160865B /* Build configuration list for PBXNativeTarget "Extended" */ = {
+		AC9C619CBFB1572E8F8FF5E0F5A6DA76 /* Build configuration list for PBXNativeTarget "Cam-Cam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A73668706D7D3D5BCC9D5423AF7D8EC8 /* Debug */,
-				5F6DD7536624F48384A56D3819007C76 /* Release */,
+				80736534D0B62D5DF5AA6E1933F28259 /* Debug */,
+				D53CF9A08304150846C3680E86DA2151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDD7AB23824CF44BC9F0DED50682A804 /* Build configuration list for PBXNativeTarget "Cam-Cam" */ = {
+		DC2DC449DAFFF20585DE5FC773203B9F /* Build configuration list for PBXNativeTarget "Cam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FEED5936829ADDB8D94A7CE2BB0F73F /* Debug */,
-				8B6334EAB31336680E086B7A7D8CA46F /* Release */,
+				AFB00B33D9E7337F76B3E2BD8CB2460D /* Debug */,
+				720A4155031B1C6E631F04D8DB9A909D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

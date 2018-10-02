@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 import Extended
 import Designer
+import CoreLocation
 
 enum CamMode {
     case Video
@@ -43,7 +44,10 @@ public class CamViewController: UIViewController, Designer {
     let notification = UINotificationFeedbackGenerator()
     let whiteScreenTag = 52
     let imagePreviewTag = 53
+    let imageTempPreviewTag = 54
     let animationDuration: Double = 0.2
+
+    var locationManager: CLLocationManager = CLLocationManager()
 
     var displayPadding: CGFloat {
         if UIDevice.current.userInterfaceIdiom == .pad {
@@ -54,12 +58,19 @@ public class CamViewController: UIViewController, Designer {
     }
 
     // MARK: Variables
+    var parentContainer: UIViewController?
     var captureSession: AVCaptureSession = AVCaptureSession()
     var photoOutput: AVCapturePhotoOutput = AVCapturePhotoOutput()
     var videoPreviewLayer: PreviewView?
     var picPreview: UIView?
     var imageOrientation: AVCaptureVideoOrientation?
     var deviceOrientationOnCapture: UIDeviceOrientation?
+
+    var currentLocation: CLLocation?
+    var currentHeading: CLHeading?
+
+    var locationONSnap: CLLocation?
+    var headingONSnap: CLHeading?
 
     var flashEnabled: Bool = false
     var hasFlash: Bool = false
@@ -119,12 +130,36 @@ public class CamViewController: UIViewController, Designer {
             close()
         } else {
             guard let parent = self.parent, let parentView = parent.view else {return}
+            // Store current location
+            locationONSnap = currentLocation
+            headingONSnap = currentHeading
+
+            // add a screenshot while waiting to process photo
+            addTempImageSnap()
             self.captureButton.isEnabled = false
             self.imageOrientation = getVideoOrientation(size: parentView.frame.size)
             let settings = setPhotoSettings()
             self.deviceOrientationOnCapture = UIDevice.current.orientation
             self.photoOutput.capturePhoto(with: settings, delegate: self)
         }
+    }
+
+    func addTempImageSnap() {
+        return
+        if let previewLayer = self.videoPreviewLayer {
+            let img = previewLayer.toImage()
+            let view = UIImageView(frame: previewLayer.frame)
+            view.tag = imageTempPreviewTag
+            view.contentMode = .scaleAspectFit
+            view.image = img
+            self.view.insertSubview(view, aboveSubview: previewLayer)
+            addPreviewConstraints(to: view)
+        }
+    }
+
+    func removeTempImageSnap() {
+        guard let imageView = self.view.viewWithTag(imagePreviewTag) as? UIImageView else {return}
+        imageView.removeFromSuperview()
     }
 
     func setup(for position: AVCaptureDevice.Position) {
@@ -287,6 +322,7 @@ public class CamViewController: UIViewController, Designer {
 
     // MARK: Display and remove
     func display(on parent: UIViewController, buttonAndBackgroundColor: UIColor? = .white, buttonTextColor: UIColor? = .black, then: @escaping (_ photo: Photo?)-> Void) {
+        self.parentContainer = parent
         self.callBack = then
 
         if let primary = buttonAndBackgroundColor {
@@ -306,6 +342,7 @@ public class CamViewController: UIViewController, Designer {
         UIView.animate(withDuration: animationDuration, animations: {
             self.position(in: parent)
         })
+        initLocation()
     }
 
     func close() {
@@ -322,6 +359,8 @@ public class CamViewController: UIViewController, Designer {
     }
 
     func remove() {
+        locationManager.stopUpdatingLocation()
+        locationManager.stopUpdatingLocation()
         notification.notificationOccurred(.error)
         if let pic = self.picPreview {
             pic.removeFromSuperview()
@@ -441,7 +480,7 @@ public class CamViewController: UIViewController, Designer {
 
         let img = UIImage(cgImage: copy, scale: 1.0, orientation: orientationOnCapture.getUIImageOrientationFromDevice())
 
-        let processed = Photo(image: img, timeStamp: photo.timestamp, metadata: photo.metadata)
+        let processed = Photo(image: img, timeStamp: photo.timestamp, location: locationONSnap, heading: headingONSnap, metadata: photo.metadata)
 
         return processed
     }
@@ -512,3 +551,58 @@ extension CamViewController: AVCapturePhotoCaptureDelegate {
         self.captureButton.isEnabled = true
     }
 }
+
+// MARK: Location
+extension CamViewController: CLLocationManagerDelegate {
+    func initLocation() {
+        locationManager = CLLocationManager()
+        locationManager.requestWhenInUseAuthorization()
+
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.distanceFilter = 1
+
+            locationManager.startUpdatingHeading()
+            locationManager.startUpdatingLocation()
+        }
+    }
+
+    // If we have been deined access give the user the option to change it
+    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if(status == CLAuthorizationStatus.denied) {
+            showLocationDisabledPopUp()
+        }
+    }
+
+    // Show the popup to the user if we have been deined access
+    func showLocationDisabledPopUp() {
+        let alertController = UIAlertController(title: "Location Access Disabled",
+                                                message: "In order to show the polling stations around you, we need access to your location",
+                                                preferredStyle: .alert)
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+
+        let openAction = UIAlertAction(title: "Open Settings", style: .default) { (action) in
+            if let url = URL(string: UIApplication.openSettingsURLString) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+
+        alertController.addAction(openAction)
+        if let parent = self.parentContainer {
+            parent.present(alertController, animated: true, completion: nil)
+        }
+    }
+
+    public func locationManager(_ manager: CLLocationManager,  didUpdateLocations locations: [CLLocation]) {
+        self.currentLocation = locations.last
+    }
+
+    public func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        self.currentHeading = newHeading
+    }
+}
+
+

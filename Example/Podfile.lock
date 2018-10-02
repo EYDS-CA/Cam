@@ -3,7 +3,7 @@ PODS:
     - Designer
     - Extended
   - Designer (0.1.0)
-  - Extended (0.4.0)
+  - Extended (1.0.1)
 
 DEPENDENCIES:
   - Cam (from `../`)
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Cam: ba072228c4847fab377d42e4ec64c946712fb5c8
   Designer: 898fa6ef36d9bfabc117234cdabefd51dd8110f1
-  Extended: b55424d2b5240ceec3de0d31e40db069a5002b6a
+  Extended: 6333baca31ee8097bec89347e3c576347c77534c
 
 PODFILE CHECKSUM: 6382f9b86a6ebfb8ed73bd8005ac7c85eff960a2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.1
